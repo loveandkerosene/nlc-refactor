@@ -68,3 +68,4 @@ Make sure [Node JS](https://nodejs.org), [NPM](https://www.npmjs.com) and [Gulp]
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass) : Compile your Sass into CSS.
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify) : Minify your JS.
 "# nlc-refactoring" 
+"# nlc-refactor" 
