@@ -1,0 +1,56 @@
+ul.tab-menu
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-start
+	@extend .align-items-center
+	gap: 1rem
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+	*
+		transition: all 0.3s
+
+	li.tab-item
+		
+		a
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-between
+			@extend .align-items-center
+			gap: 0.5rem
+			padding: 8px 12px
+			color: $gray-500 !important
+			text-decoration: none
+			font-weight: 500 !important
+			font-size: 14px !important
+			border-radius: 6px
+
+			&:focus
+				background-color: white
+				color: $gray-500 !important
+
+			&:hover
+				color: $primary-500 !important
+				background-color: $primary-100
+
+				.badge-gray
+					@extend .badge-primary
+
+				.badge-primary
+					background-color: $primary-200
+
+
+	li.tab-item.active
+
+		a
+			color: $primary-500 !important
+			background-color: $primary-100
+
+			.badge-primary
+					background-color: $primary-200
+
+			&:hover
+
+				.badge-primary
+					background-color: $primary-300

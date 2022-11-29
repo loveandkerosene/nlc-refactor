@@ -1,0 +1,57 @@
+// scss-docs-start caret-mixins
+@mixin caret-down {
+  font: var(--fa-font-regular);
+  content: "\f078";
+}
+
+@mixin caret-up {
+  font: var(--fa-font-regular);
+  content: "\f077";
+}
+
+@mixin caret-end {
+  font: var(--fa-font-regular);
+  content: "\f054";
+}
+
+@mixin caret-start {
+  font: var(--fa-font-regular);
+  content: "\f053";
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline;
+      margin-left: $caret-spacing;
+      vertical-align: $caret-vertical-align;
+      content: "";
+      @if $direction == down {
+        @include caret-down();
+      } @else if $direction == up {
+        @include caret-up();
+      } @else if $direction == end {
+        @include caret-end();
+      }
+    }
+
+    @if $direction == start {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: $caret-spacing;
+        vertical-align: $caret-vertical-align;
+        content: "";
+        @include caret-start();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}
+// scss-docs-end caret-mixins

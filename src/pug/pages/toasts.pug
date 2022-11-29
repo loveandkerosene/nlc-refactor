@@ -1,0 +1,58 @@
+extends ./../layouts/default-layout.pug
+block content
+	
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Components
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Toasts
+						.header-content
+							.page-title 
+								i.fa-light.fa-credit-card
+								| Toasts
+							.actions
+								.btn.btn-secondary-gray(data-bs-title="Update payment information" type='button' data-bs-toggle='modal' data-bs-target='#updatePayment')
+									i.fa-regular.fa-credit-card.me-2
+									| Update Payment
+
+					.card-body
+						.contents
+							
+							.row
+								.col
+									button#liveToastBtn.btn.btn-primary(type='button') Show live toast
+									.toast-container.position-fixed.bottom-0.p-3(style="left: 220px")
+										#liveToast.toast(role='alert' aria-live='assertive' aria-atomic='true')
+											.toast-header
+												img.rounded.me-2(src='...' alt='...')
+												strong.me-auto Bootstrap
+												small 11 mins ago
+												button.btn-close(type='button' data-bs-dismiss='toast' aria-label='Close')
+											.toast-body
+												| Hello, world! This is a toast message.
+	script.
+		const toastTrigger = document.getElementById('liveToastBtn')
+		const toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+			toastTrigger.addEventListener('click', () => {
+				const toast = new bootstrap.Toast(toastLiveExample)
+
+				toast.show()
+			})
+		}

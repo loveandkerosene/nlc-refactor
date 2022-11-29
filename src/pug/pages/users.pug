@@ -1,0 +1,483 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Users
+						.header-content
+							.page-title 
+								i.fa-light.fa-user
+								| Users List
+							.actions
+								.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#createUser')
+									i.fa-regular.fa-plus.me-2
+									| Create New
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Customers
+								li.tab-item
+									a(href="#") 
+										| Super Admins
+								li.tab-item
+									a(href="#") 
+										| Org Admins
+								li.tab-item
+									a(href="#") 
+										| Team Leaders
+								li.tab-item
+									a(href="#") 
+										| Designers
+								li.tab-item
+									a(href="#") 
+										| Account Managers
+								li.tab-item
+									a(href="#") 
+										| Archived
+					.card-body
+						.card-table
+
+							table.table
+								thead
+									tr
+										th(scope='col' style="width: 28%")
+											span Name
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th(scope='col' style="width: 15%")
+											span Email
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th(scope='col' style="width: 15%")
+											span Account Manager
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th.text-center(scope='col' style="width: 10%")
+											span Role
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th.text-center(scope='col' style="width: 10%")
+											span Date Created
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th(scope='col' style="width: 15%")
+
+								tbody
+									tr
+										a(href="profile.html")
+											td
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										a(href="profile.html")
+											td.text
+												| john@nlc.com
+										a(href="profile.html")
+											td.text-center
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										td.text-center
+											| Administrator
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-box-archive
+												li
+													a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+														i.fa-regular.fa-trash-can
+									
+														i.fa-regular.fa-trash-can
+									tr
+										a(href="profile.html")
+											td
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										a(href="profile.html")
+											td.text
+												| john@nlc.com
+										a(href="profile.html")
+											td.text-center
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										td.text-center
+											| Administrator
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-box-archive
+												li
+													a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+														i.fa-regular.fa-trash-can
+									
+														i.fa-regular.fa-trash-can
+									tr
+										a(href="profile.html")
+											td
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										a(href="profile.html")
+											td.text
+												| john@nlc.com
+										a(href="profile.html")
+											td.text-center
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										td.text-center
+											| Administrator
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-box-archive
+												li
+													a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+														i.fa-regular.fa-trash-can
+									
+														i.fa-regular.fa-trash-can
+									tr
+										a(href="profile.html")
+											td
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										a(href="profile.html")
+											td.text
+												| john@nlc.com
+										a(href="profile.html")
+											td.text-center
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										td.text-center
+											| Administrator
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-box-archive
+												li
+													a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+														i.fa-regular.fa-trash-can
+									
+														i.fa-regular.fa-trash-can
+									tr
+										a(href="profile.html")
+											td
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										a(href="profile.html")
+											td.text
+												| john@nlc.com
+										a(href="profile.html")
+											td.text-center
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										td.text-center
+											| Administrator
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-box-archive
+												li
+													a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+														i.fa-regular.fa-trash-can
+									
+														i.fa-regular.fa-trash-can
+									tr
+										a(href="profile.html")
+											td
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										a(href="profile.html")
+											td.text
+												| john@nlc.com
+										a(href="profile.html")
+											td.text-center
+												.avatar-label-group
+													.avatar
+														.avatar-container
+													.avatar-label-group-container
+														span.title John Oliveira
+										td.text-center
+											| Administrator
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-box-archive
+												li
+													a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+														i.fa-regular.fa-trash-can
+									
+														i.fa-regular.fa-trash-can
+
+	//- MODAL
+
+	#confirmDelete.modal.modal-sm.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.text-center
+						.feat-icon
+							.feat-icon-circle.feat-icon-lg.feat-icon-danger
+								i.fa-regular.fa-circle-exclamation
+
+						.modal-title Are you sure?
+						| Are you sure you would like to delete this user?
+						br
+						b.danger-600 You can't revert this action.
+				.modal-actions
+					.row
+						.col-6
+							button.btn.btn-danger.d-block(type='button') Delete
+						.col-6
+							button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
+
+	//- CREATE USER MODAL 1
+
+	#createUser.modal.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.row
+						.col
+							.text-center
+								img.w-50.p-3(src="/assets/images/new-user.png")
+								.modal-title Select a role
+								| What role would like to create a user on?
+								br
+								b You can change this after creation.
+					.row.mt-4
+						.col
+							select.w-75.mx-auto.form-select.form-select-sm(aria-label="Select Example")
+								option(selected) Please pick a role
+								option(value="1") Super Admin
+								option(value="2") Owner
+								option(value="3") Team Leader
+								option(value="4") Designer
+								option(value="5") Account Manager
+								option(value="6") Organization Admin
+				.modal-actions
+					.row
+						.col-6
+							button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
+						.col-6
+							button.btn.btn-primary.d-block(type='button' data-bs-toggle='modal' data-bs-target='#createUser2') Next
+
+	//- CREATE USER MODAL 2
+
+	#createUser2.modal.modal-xl.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.row
+						.col.d-flex.flex-column.justify-content-center.align-items-center
+
+							.text-center
+								img.w-30.p-3(src="/assets/images/new-user2.png")
+								.modal-title Create a designer
+								| What role would like to create a user on?
+								br
+								b You can change this after creation.
+						.col
+							.row
+								button.btn.btn-small.btn-secondary-gray.mb-3.ms-2.fit-content(style="margin-top: -1rem" type='button' data-bs-toggle='modal' data-bs-target='#createUser')
+									i.fa-regular.fa-chevron-left
+									| Go back
+							
+							.gray-100-bg.p-4.rounded
+								.row
+									.col
+										label.form-label(for="ControlInput1") Name
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-user
+											input.form-control#ControlInput1(type="text" placeholder="Designer's name")
+								.row.mt-4
+									.col
+										label.form-label(for="ControlInput1") Email
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-envelope
+											input.form-control(type="text" placeholder="Designer's email" aria-label="Example" aria-describedby="addon")
+								.row.mt-4
+									.col
+										label.form-label(for="ControlInput1") Organization
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-building
+											select.form-select.form-select-sm(aria-label="Select Example")
+												option(selected) Please pick an organization
+												option(value="1") Super Admin
+												option(value="2") Owner
+												option(value="3") Team Leader
+												option(value="4") Designer
+												option(value="5") Account Manager
+												option(value="6") Organization Admin
+								.row.mt-3
+									.col
+										label.form-label(for="ControlInput1") Team
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-users
+											select.form-select.form-select-sm(aria-label="Select Example")
+												option(selected) Select a team
+												option(value="1") Super Admin
+												option(value="2") Owner
+												option(value="3") Team Leader
+												option(value="4") Designer
+												option(value="5") Account Manager
+												option(value="6") Organization Admin
+									.col
+										label.form-label(for="ControlInput1") Designation
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-user-bounty-hunter
+											select.form-select.form-select-sm(aria-label="Select Example")
+												option(selected) Select a designation
+												option(value="1") Super Admin
+												option(value="2") Owner
+												option(value="3") Team Leader
+												option(value="4") Designer
+												option(value="5") Account Manager
+												option(value="6") Organization Admin
+								.row.mt-3
+									.col
+										label.form-label(for="ControlInput1") Password
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-lock
+											input.form-control#ControlInput1(type="password" placeholder="Password")
+									.col
+										label.form-label(for="ControlInput1") Confirm Password
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-lock
+											input.form-control(type="password" placeholder="Confirm password" aria-label="Example" aria-describedby="addon")
+
+							.modal-actions.mt-1
+								.row
+									.col-6
+										button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
+									.col-6
+										button.btn.btn-primary.d-block(type='button' data-bs-dismiss='modal') Save

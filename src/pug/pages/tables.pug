@@ -1,0 +1,177 @@
+extends ./../layouts/default-layout.pug
+block content
+
+
+	.container
+
+		.row
+
+			.col-6
+
+				.text-d-md-semibold.black Tables
+
+				//- INPUT
+
+				.text-d-sm-medium.mt-3.gray-700 Types
+
+				.card.mt-4
+
+					//- INPUT SIZES
+					
+					.card-header
+						.title Default
+
+					.card-body
+
+						.card-table
+
+							table.table
+								thead
+									tr
+										th(scope='col')
+											span Sort
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th(scope='col')
+											label.check-contain-sm
+												span Option
+												input(type="checkbox")
+												.check-sm-input
+								tbody
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="checkbox")
+												.check-input
+										td.lead-text Lead Text
+										
+									tr
+										th(scope='row') 
+											label.check-contain
+												input(type="radio" name="radio")
+												.check-input
+										td.text
+											h1 Text
+											p Text
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="checkbox")
+												.check-input
+										td
+											.has-avatar
+												.avatar
+													.avatar-content
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="radio" name="radio")
+												.check-input
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="checkbox")
+												.check-input
+										td.feature-icon
+											.feat-icon
+												.feat-icon-circle.feat-icon-primary
+													i.fa-regular.fa-zap
+											div
+												h1 Feature Icon
+												p Feature Icon
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="radio" name="radio")
+												.check-input
+										td
+											.has-avatar-group
+												.avatar-group
+
+													ul.avatar-list
+														
+														li.avatar
+															.avatar-container
+														li.avatar
+															.avatar-container
+
+														li.avatar.avatar-placeholder
+															.avatar-container
+																span JO
+														li.avatar
+															.avatar-container
+														li.avatar
+															.avatar-container
+														li.avatar.avatar-placeholder
+															.avatar-container
+																span +8
+														li.avatar-add-button
+															.avatar-container
+																i.fa-regular.fa-plus
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="checkbox")
+												.check-input
+										td.rating-starts
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="checkbox")
+												.check-input
+										td
+											.progress
+												.progress-bar(role='progressbar' aria-label='Basic example' style='width: 33%' aria-valuenow='33' aria-valuemin='0' aria-valuemax='100')
+													| 33%
+
+									tr
+										th(scope='row')
+											label.check-contain
+												input(type="checkbox")
+												.check-input
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-masks-theater
+												li
+													a(href="#")
+														i.fa-regular.fa-message
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a(href="#")
+														i.fa-regular.fa-cloud-arrow-down
+												li
+													a(href="#")
+														i.fa-regular.fa-pen-to-square
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can
+
+
+										
+

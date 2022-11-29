@@ -1,0 +1,93 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Settings
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Global Settings
+							.actions
+								.btn.btn-primary#liveToastBtn(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+					.card-body
+						.content
+							
+							.row
+								.col-4
+									h6 Notifications
+									span Maecenas ultrices eu sapien at sollicitudin. In ac lacus sed nisi congue tristique.
+								.col-7.offset-1
+									.row
+										.col-2.form-check.form-switch
+											.m-auto Push
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch' checked='')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch' checked='')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch' checked='')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch' checked='')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch')
+										.col-2.form-check.form-switch
+											.m-auto Email
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch' checked='')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch' checked='')
+											br
+											input#flexSwitchCheckChecked.mx-auto.form-check-input(type='checkbox' role='switch')
+											
+										.col
+											br
+											label.form-check-label(for='flexSwitchCheckChecked') Mentioned or tagged in a request
+											br
+											label.form-check-label(for='flexSwitchCheckChecked') A new user is registered in the system
+											br
+											label.form-check-label(for='flexSwitchCheckChecked') A feedback is made on a request
+											br
+											label.form-check-label(for='flexSwitchCheckChecked') A rating has been edited
+											br
+											label.form-check-label(for='flexSwitchCheckChecked') A marketplace product purchased
+
+
+	.toast.align-items-center.text-bg-success.border-0.position-fixed#liveToast(role='alert' aria-live='assertive' aria-atomic='true' style="left: 236px; bottom: 1rem")
+		.d-flex
+			.toast-body
+				| Your changes have been saved
+			button.btn-close.btn-close-white.white.me-3.m-auto(type='button' data-bs-dismiss='toast' aria-label='Close' style="height:0.5rem !important; width: 0.5rem !important")
+
+
+	script.
+		const toastTrigger = document.getElementById('liveToastBtn')
+		const toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+			toastTrigger.addEventListener('click', () => {
+				const toast = new bootstrap.Toast(toastLiveExample)
+
+				toast.show()
+			})
+		}

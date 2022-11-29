@@ -1,0 +1,148 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#navigation
+
+		.container-fluid.p-0
+
+			.main-content
+
+				//- SIDEBAR
+
+				nav.sidebar
+
+					.nav-container
+						a.brand
+							img(src="/assets/images/brand.png")
+						.top-menu
+							.impersonation-panel
+								.avatar-label-group
+									.avatar
+										.avatar-container
+										.online-indicator-on
+									.avatar-label-group-container
+										span.title John Oliveira
+										span.subtitle john@nlc.com
+								.tag.tag-danger
+									.tag-content 
+										| Impersonating
+										i.fa-regular.fa-close
+
+							ul
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-grid-2
+											div Dashboard
+								li
+									a.menu-item.active(href="#") 
+										.link-content
+											i.fa-regular.fa-bell
+											div Notifications
+										.badge 10
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-building
+											div Organizations
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-bars-progress
+											div Requests
+										.badge 10
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-medal
+											div Brands
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-user
+											div Users
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-users
+											div Teams
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-cabinet-filing
+											div Accounts
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-file-chart-column
+											div Reports
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-lightbulb-cfl-on
+											div Inspiration
+
+					.nav-container.bottom-container
+						ul
+							li
+								a.menu-item(href="#") 
+									.link-content
+										i.fa-regular.fa-toolbox
+										div Tools
+							li
+								a.menu-item(href="#") 
+									.link-content
+										i.fa-regular.fa-life-ring
+										div Support
+
+				//- MAIN PANEL
+
+				.main-panel
+
+					//- TOPBAR
+					
+					nav.navbar.navbar-expand-lg
+						.container-fluid.p-0
+							
+							button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+								span.navbar-toggler-icon
+
+							#navbarSupportedContent.collapse.navbar-collapse
+								.manage-plan
+									.plan-contents
+										.plan-label Current Plan
+										.plan-description Graphics + Video (Monthly)
+									.btn.btn-xs.btn-secondary-gray Manage
+								.right
+									form.d-flex(role='search').me-3
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-magnifying-glass
+											input.form-control(type="text" placeholder="Global Search" aria-label="Example" aria-describedby="addon")
+									.avatar.dropdown.ms-3
+										.avatar-container.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+										.indicator-icon
+											i.fa-regular.fa-chevron-down
+										ul.dropdown-menu.dropdown-menu-end
+											li
+												a.dropdown-item(href='#') 
+													i.fa-regular.fa-user 
+													| Profile
+											li
+												a.dropdown-item(href='#') 
+													i.fa-regular.fa-gear
+													| Settings
+											li
+												a.dropdown-item(href='#') 
+													i.fa-regular.fa-bullhorn
+													| Announcements
+											li
+												a.dropdown-item(href='#') 
+													i.fa-regular.fa-user-astronaut
+													| Referral Program
+											li
+												hr.dropdown-divider
+											li
+												a.dropdown-item.danger(href='#')
+													i.fa-regular.fa-arrow-right-to-bracket
+													| Logout

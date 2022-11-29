@@ -1,0 +1,205 @@
+.card
+	border-radius: 0.75rem
+	background-color: $white
+	max-height: 100%
+	overflow: hidden
+
+	.card-header
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-start
+		@extend .align-items-center
+		padding: 1rem 1.25rem
+		border-bottom: 1px solid $gray-200
+		background-color: $gray-25
+		border-radius: 0.75rem 0.75rem 0 0
+		height: 75px
+		overflow: hidden
+		position: sticky
+
+		.title
+			@extend .text-lg-semibold
+			color: $black
+
+			i
+				margin-right: 16px
+				color: $gray-500
+
+		.actions
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-start
+			@extend .align-items-center
+			gap: 0.5rem
+
+			.btn
+				margin-left: 1rem
+
+	.page-header
+		width: 100%
+		border-radius: 0.75rem 0.75rem 0 0
+		border-bottom: 1px solid $gray-200
+		overflow: hidden
+		position: sticky
+		background-color: $gray-25
+
+
+		nav
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-between
+			@extend .align-items-center
+			border-bottom: 1px solid $gray-200
+			width: 100%
+			background-color: $gray-50
+
+			ol
+				width: 100%
+				padding: 0.75rem 1.5rem
+				margin: 0
+				list-style-type: none
+
+		nav ol.request-actions
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-between
+			@extend .align-items-center
+			padding: 0
+
+			li
+				.mark-complete .btn
+					margin-left: 24px !important
+
+				.actions-right
+					@extend .d-flex
+					@extend .flex-row
+					@extend .justify-content-between
+					@extend .align-items-center
+
+					.close 
+						margin-left: 0.75rem
+
+						.btn
+							border-left: 1px solid $gray-200
+							padding: 24px 28px
+							border-radius: 0
+
+							&:hover
+								background-color: $gray-50
+							
+							i
+								font-size: 1.5rem !important
+
+
+
+		.header-content
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-between
+			@extend .align-items-center
+			padding: 1rem 1.5rem
+			max-width: 100%
+
+			.request-title
+
+				.account
+					color: $primary-400
+					font-size: 12px
+					text-transform: uppercase
+					display: block
+
+			.page-title
+				@extend .d-flex
+				@extend .flex-row
+				@extend .justify-content-between
+				@extend .align-items-center
+				@extend .text-d-xs-semibold 
+				color: black
+
+				i
+					margin-right: 1rem
+					border-radius: 4px
+					color: $primary-500
+					font-size: 1rem
+					padding: 0.5rem
+					background-color: $primary-100
+
+			.actions
+				@extend .d-flex
+				@extend .flex-row
+				@extend .justify-content-start
+				@extend .align-items-center
+				gap: 0.5rem
+
+		.header-options
+			// @extend .d-flex
+			// @extend .flex-row
+			// @extend .justify-content-start
+			// @extend .align-items-center
+			max-width: 100%
+			padding: 1rem 1.5rem
+			border-top: 1px solid $gray-200
+			background-color: $gray-25
+
+
+	.card-body
+		// overflow: hidden
+
+		.content
+			padding: 1.5rem 1.5rem
+
+
+	.card-table
+
+		table.table
+			margin-bottom: 0 !important
+
+			tr:last-child 
+				td
+					border-bottom: 0 !important
+
+
+
+	.card-footer
+		padding: 1rem 1.25rem 0.01rem
+		border-top: 1px solid $gray-200
+		text-align: center
+		background-color: transparent !important
+		
+
+		.pagination
+
+			.page-link
+				color: $gray-500 !important
+
+				&:hover
+					background-color: $gray-100
+					color: $gray-600
+
+		.items-shown
+			@extend .text-xs-regular
+			margin-bottom: 1rem
+			margin-left: 1rem
+
+.card-widget
+
+	.content
+
+		.indicator
+			border-left: 4px solid $gray-500
+			padding-left: 1rem
+
+			h1
+				color: black
+				font-weight: 600
+				margin-bottom: 0
+
+
+		.indicator.primary
+			border-color: $primary-500
+
+		.indicator.danger
+			border-color: $danger-500
+
+			h1
+				color: $danger-600

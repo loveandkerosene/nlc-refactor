@@ -1,0 +1,128 @@
+ul.notification-list
+	margin: 0
+	padding: 0
+	list-style-type: none
+	width: fit-content
+	border-right: 1px solid $gray-200
+
+	*
+		transition: all 0.3s
+
+	li
+		border-bottom: 1px solid $gray-200
+
+		a
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-start
+			@extend .align-items-start
+			padding: 12px 16px
+			color: $gray-600
+			text-decoration: none
+			width: fit-content
+			gap: 1rem
+
+			.notification-header
+				@extend .d-flex
+				@extend .flex-row
+				@extend .justify-content-between
+				@extend .align-items-center
+				width: 100%
+
+				.notification-title
+					@extend .text-sm-medium
+					color: $gray-700
+
+				.notification-time
+					@extend .text-xs-regular
+					color: $gray-400
+
+			.notification-body
+				color: $gray-500
+
+				span.highlight-text
+					@extend .text-sm-medium
+					color: $primary-400
+
+
+			&:hover
+				background-color: $gray-50
+
+				.notification-title
+					@extend .text-sm-medium
+					color: $gray-900
+
+				.notification-time
+					@extend .text-xs-regular
+					color: $gray-500
+
+				.notification-body
+					color: $gray-600
+
+					span.highlight-text
+						color: $primary-600
+	
+	li.notification-read
+		background-color: $gray-100
+
+		.notification-title
+			color: $gray-500 !important
+
+		.notification-time
+			color: $gray-300
+
+		.notification-body
+			color: $gray-400
+
+			span.highlight-text
+				color: $primary-300
+
+		&:hover
+
+			a
+				background-color: $gray-200
+
+				.notification-title
+					color: $gray-600 !important
+
+				.notification-time
+					color: $gray-400
+
+				.notification-body
+					color: $gray-500
+
+					span.highlight-text
+						color: $primary-400
+
+	li.current
+		background-color: $primary-50
+		border-left: 4px solid $primary-500
+
+		.notification-title
+			color: $gray-900 !important
+
+		.notification-time
+			color: $gray-400
+
+		.notification-body
+			color: $gray-500
+
+			span.highlight-text
+				color: $primary-500
+
+		&:hover
+
+			a
+				background-color: $primary-100
+
+				.notification-title
+					color: $gray-900 !important
+
+				.notification-time
+					color: $gray-600
+
+				.notification-body
+					color: $gray-700
+
+					span.highlight-text
+						color: $primary-600

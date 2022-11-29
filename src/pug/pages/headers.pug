@@ -1,0 +1,1135 @@
+extends ./../layouts/default-layout.pug
+block content
+
+
+	.contents
+								
+		//- USER PROFILE
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| User Profile
+						.header-content
+							.page-title 
+								i.fa-light.fa-user
+								| User Profile
+							.actions
+								.btn.btn-tertiary-gray(data-bs-toggle="tooltip" data-bs-title="Copy link to profile")
+									i.fa-regular.fa-link
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+		
+		//- BILLING
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Billing
+						.header-content
+							.page-title 
+								i.fa-light.fa-credit-card
+								| Billing Information
+							.actions
+								.btn.btn-secondary-gray(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-credit-card.me-2
+									| Update Payment
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+
+		//- SETTINGS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Settings
+						.header-content
+							.page-title 
+								i.fa-light.fa-earth-americas
+								| Global Settings
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+
+		//- AFFILIATE PROGRAM
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Affiliate Program
+						.header-content
+							.page-title 
+								i.fa-light.fa-user-astronaut
+								| Affiliate Program
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+
+		//- ANNOUNCEMENTS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Announcements
+						.header-content
+							.page-title 
+								i.fa-light.fa-bullhorn
+								| Announcements
+						.header-options
+							.row
+								.col-md-3
+									.input-group
+										span.input-group-text
+											i.fa-regular.fa-magnifying-glass
+										input.form-control(type="text" placeholder="Search announcements" aria-label="Example" aria-describedby="addon" data-bs-toggle="tooltip" data-bs-title="Search through announcements")
+								.col
+									.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Sort notifications by")
+										i.fa-regular.fa-bars-sort.me-2
+										| Sort by: Date
+
+		//- NOTIFICATIONS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Notifications
+						.header-content
+							.page-title 
+								i.fa-light.fa-bell
+								| Notifications
+							.actions
+								.btn.btn-tertiary-color(data-bs-toggle="tooltip" data-bs-title="Mark all notifications as read")
+									i.fa-regular.fa-check.me-2
+									| Mark all as read
+								.btn.btn-tertiary-gray(data-bs-toggle="tooltip" data-bs-title="Clear all notifications")
+									i.fa-regular.fa-sun-dust.me-2
+									| Clear All
+						.header-options
+							.row
+								.col-md-3
+									.input-group
+										span.input-group-text
+											i.fa-regular.fa-magnifying-glass
+										input.form-control(type="text" placeholder="Search notifications" aria-label="Example" aria-describedby="addon" data-bs-toggle="tooltip" data-bs-title="Search through your notifications")
+								.col
+									.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Filter notifications by")
+										i.fa-regular.fa-filter-list.me-2
+										| Filter by: All
+									.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Sort notifications by")
+										i.fa-regular.fa-bars-sort.me-2
+										| Sort by: Date
+
+		//- ORGANIZATIONS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Organizations
+						.header-content
+							.page-title 
+								i.fa-light.fa-building
+								| Organizations
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new organization")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- ORGANIZATION
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Organizations
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Organization Name
+						.header-content
+							.page-title 
+								i.fa-light.fa-building
+								| Organization Name
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+						.header-options
+							ul.tab-menu
+								li.tab-item
+									a(href="#") 
+										| Settings
+								li.tab-item
+									a(href="#") 
+										| Teams
+								li.tab-item
+									a(href="#") 
+										| Products
+										.badge.badge-sm.badge-gray 5
+								li.tab-item.active
+									a(href="#") 
+										| Users
+										.badge.badge-sm.badge-primary 5
+								li.tab-item
+									a(href="#") 
+										| Designations
+
+		//- REQUEST LIST
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Requests
+						.header-content
+							.page-title 
+								i.fa-light.fa-bars-progress
+								| Requests List
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new request")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Open
+										.badge.badge-sm.badge-primary 3155
+								li.tab-item
+									a(href="#") 
+										| Completed
+										.badge.badge-sm.badge-gray 57392
+								li.tab-item
+									a(href="#") 
+										| Drafts
+										.badge.badge-sm.badge-gray 41
+								li.tab-item
+									a(href="#") 
+										| On Hold
+										.badge.badge-sm.badge-gray 339
+								li.tab-item
+									a(href="#") 
+										| Due Today
+										.badge.badge-sm.badge-gray 0
+								li.tab-item
+									a(href="#") 
+										| Overdue
+										.badge.badge-sm.badge-gray 1634
+								li.tab-item
+									a(href="#") 
+										| Ready for Review
+										.badge.badge-sm.badge-gray 6
+
+		//- REQUEST
+		
+		.row.mt-4
+			.col-6
+				.card
+					.page-header
+						nav(aria-label='request-list')
+							ol.request-actions
+								li.request-list-item
+									.mark-complete
+										.btn.btn-success
+											i.fa-regular.fa-check-circle.me-2
+											| Mark Complete
+								li.request-list-item
+									.actions-right
+										.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Mark request as a favorite")
+											i.fa-regular.fa-star
+										.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Set dependencies")
+											i.fa-regular.fa-diagram-subtask
+										.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Duplicate this request")
+											i.fa-regular.fa-copy
+										.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Copy link URL to clipboard")
+											i.fa-regular.fa-link
+										.btn.btn-tertiary-gray.d-inline-block(data-bs-toggle="tooltip" data-bs-title="Request menu")
+											i.fa-regular.fa-ellipsis-vertical
+										.close.d-inline-block
+											.btn.btn-link-gray
+												i.fa-regular.fa-close
+								
+							
+						.header-content
+							.request-title
+								.account.d-block Account name
+								.page-title
+									.d-block Request Name Here
+
+		//- BRANDS LIST
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Brands
+						.header-content
+							.page-title 
+								i.fa-light.fa-medal
+								| Brands List
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new brand")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- BRAND
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									a(href="#") Brands
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Brand Name
+						.header-content
+							.page-title 
+								.avatar.avatar-sm.me-3(style="background: url('/assets/images/nlc.png') !important; background-size: 100% !important")
+									.avatar-container
+								| Brand Name
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Settings
+								li.tab-item
+									a(href="#") 
+										| Activity Log
+
+		//- USERS LIST
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Users
+						.header-content
+							.page-title 
+								i.fa-light.fa-user
+								| Users List
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new request")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Customers
+								li.tab-item
+									a(href="#") 
+										| Super Admins
+								li.tab-item
+									a(href="#") 
+										| Org Admins
+								li.tab-item
+									a(href="#") 
+										| Team Leaders
+								li.tab-item
+									a(href="#") 
+										| Designers
+								li.tab-item
+									a(href="#") 
+										| Account Managers
+								li.tab-item
+									a(href="#") 
+										| Archived
+
+		//- USER
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Users
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| User Name
+						.header-content
+							.page-title 
+								.avatar.avatar-sm.me-3
+								| User Name
+
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Settings
+								li.tab-item
+									a(href="#") 
+										| Billing
+								li.tab-item
+									a(href="#") 
+										| Affiliate Program
+								li.tab-item
+									a(href="#") 
+										| Activity Log
+
+		//- TEAMS LIST
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Teams
+						.header-content
+							.page-title 
+								i.fa-light.fa-users
+								| Teams List
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new request")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- TEAM
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Teams
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Team Name
+						.header-content
+							.page-title 
+								i.fa-light.fa-users
+								| Team Name
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Settings
+								li.tab-item
+									a(href="#") 
+										| Activity Log
+
+		//- ACCOUNTS LIST
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Accounts
+						.header-content
+							.page-title 
+								i.fa-light.fa-cabinet-filing
+								| Accounts List
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new brand")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Active
+								li.tab-item
+									a(href="#") 
+										| Cancelled
+								li.tab-item
+									a(href="#") 
+										| Archived
+								li.tab-item
+									a(href="#") 
+										| All
+								li.tab-item
+
+		//- ACCOUNT
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#")  Accounts
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Account Name
+						.header-content
+							.page-title 
+								i.fa-light.fa-cabinet-filing
+								| Account Name
+
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Overview
+								li.tab-item
+									a(href="#") 
+										| Settings
+								li.tab-item
+									a(href="#") 
+										| Brands
+								li.tab-item
+									a(href="#") 
+										| Users
+								li.tab-item
+									a(href="#") 
+										| Internal Notes
+								li.tab-item
+									a(href="#") 
+										| Marketplace Purchases
+								li.tab-item
+									a(href="#") 
+										| Activity Log
+
+
+		//- TOOLS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Tools
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Tools
+
+		//- TOOLS - CATEGORIES
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Categories
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Categories
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new category")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- TOOLS - KNOWLEDGE BASE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Knowledgebase
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Knowledgebase
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| New Article
+
+		//- TOOLS - USER GUIDE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| User Guide
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| User Guide
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| New Article
+
+		//- TOOLS - USER GUIDE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| User Guide
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| User Guide
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| New Article
+
+		//- TOOLS - USER GUIDE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Dashboard Feed
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Dashboard Feed
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- TOOLS - PRODUCTS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Products
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Products
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Global
+								li.tab-item
+									a(href="#") 
+										| Private
+								li.tab-item
+									a(href="#") 
+										| Addons
+								li.tab-item
+									a(href="#") 
+										| Marketplace
+								li.tab-item
+									a(href="#") 
+										| Marketplace Settings
+
+		//- TOOLS - COUPONS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Coupons
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Coupons
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- TOOLS - ANNOUNCEMENTS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Announcements
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Announcements
+							.actions
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Create a new article")
+									i.fa-regular.fa-plus.me-2
+									| Create New
+
+		//- TOOLS - MAINTENANCE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Maintenance
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Maintenance
+
+		//- TOOLS - PAYMENT LOGS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Payment Logs
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Payment Logs
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Overview
+								li.tab-item
+									a(href="#") 
+										| Marketplace
+
+		//- TOOLS - BLACKLIST
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Blacklist
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Blacklist
+
+		//- TOOLS - INNACTIVE REQUESTS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Inactive Requests
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Inactive Requests
+
+		//- TOOLS - TEAM ASSIGNEMENT AUTOMATION
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Team Assignment Automation
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Team Assignment Automation
+
+		//- TOOLS - SUGGESTION CONTENT TOOL
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Tools
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Suggestion Content Tool
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Suggestion Content Tool
+
+		//- REPORTS
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Reports
+						.header-content
+							.page-title 
+								i.fa-light.fa-file-chart-column
+								| Reports
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| All
+								li.tab-item
+									a(href="#") 
+										| Graphics
+								li.tab-item
+									a(href="#") 
+										| Video
+
+		//- INSPIRATION
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Inspiration
+						.header-content
+							.page-title 
+								i.fa-light.fa-lightbulb-cfl-on
+								| Inspiration
+
+		//- SUPPORT
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Help
+						.header-content
+							.page-title 
+								i.fa-light.fa-circle-question
+								| Help
+
+		//- SUPPORT - KNOWLEDGEBASE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Support
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Knowledgebase
+						.header-content
+							.page-title 
+								i.fa-light.fa-brain-circuit
+								| Knowledgebase
+
+		//- SUPPORT - USER GUIDE
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Support
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Knowledgebase
+						.header-content
+							.page-title 
+								i.fa-light.fa-book-open
+								| User Guide

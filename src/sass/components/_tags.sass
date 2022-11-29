@@ -1,0 +1,381 @@
+.tag-close
+	padding: 0.125rem
+	color: $gray-400
+
+.tag-count
+	padding: 0 0.313rem
+	background-color: $primary-100
+	color: $primary-700
+	border-radius: 3px
+	@extend .text-xs-medium
+
+.tag
+	background-color: $white
+	border: 1px solid $primary-400
+	display: inline-block !important
+	padding: 4px 8px
+	border-radius: 6px
+	color: $primary-600
+	transition: background-color 0.3s
+	@extend .text-sm-medium
+
+	&:hover
+		background-color: $primary-50
+		color: $primary-700
+		cursor: pointer
+	
+	.tag-content
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-between
+		@extend .align-items-center
+		gap: 5px
+
+		.check-contain-sm
+			margin-bottom: 0
+
+			span
+				margin-left: 0.01rem
+
+
+.tag.tag-sm
+	@extend .text-xs-medium
+
+.tag.tag-lg
+	padding: 6px 10px
+
+//---------- COLORS ----------//
+
+/* GRAY */
+
+.tag.tag-gray
+	border-color: $gray-400
+	color: $gray-600
+
+	&:hover
+		background-color: $gray-50
+		color: $gray-700
+
+	.tag-count
+		background-color: $gray-100
+		color: $gray-700
+
+/* DANGER */
+
+.tag.tag-danger
+	border-color: $danger-400
+	color: $danger-600
+
+	&:hover
+		background-color: $danger-50
+		color: $danger-700
+
+	.tag-count
+		background-color: $danger-100
+		color: $danger-700
+
+/* WARNING */
+
+.tag.tag-warning
+	border-color: $warning-400
+	color: $warning-600
+
+	&:hover
+		background-color: $warning-50
+		color: $warning-700
+
+	.tag-count
+		background-color: $warning-100
+		color: $warning-700
+
+/* SUCCESS */
+
+.tag.tag-success
+	border-color: $success-400
+	color: $success-600
+
+	&:hover
+		background-color: $success-50
+		color: $success-700
+
+	.tag-count
+		background-color: $success-100
+		color: $success-700
+
+/* BLUE GRAY */
+
+.tag.tag-blue-gray
+	border-color: $blue-gray-400
+	color: $blue-gray-600
+
+	&:hover
+		background-color: $blue-gray-50
+		color: $blue-gray-700
+
+	.tag-count
+		background-color: $blue-gray-100
+		color: $blue-gray-700
+
+/* BLUE LIGHT */
+
+.tag.tag-blue-light
+	border-color: $blue-light-400
+	color: $blue-light-700
+
+	&:hover
+		background-color: $blue-light-50
+		color: $blue-light-600
+
+	.tag-count
+		background-color: $blue-light-100
+		color: $blue-light-700
+
+/* BLUE */
+
+.tag.tag-blue
+	border-color: $blue-400
+	color: $blue-600
+
+	&:hover
+		background-color: $blue-50
+		color: $blue-700
+
+	.tag-count
+		background-color: $blue-100
+		color: $blue-700
+
+/* INDIGO */
+
+.tag.tag-indigo
+	border-color: $indigo-400
+	color: $indigo-600
+
+	&:hover
+		background-color: $indigo-50
+		color: $indigo-700
+
+	.tag-count
+		background-color: $indigo-100
+		color: $indigo-700
+
+/* PINK */
+
+.tag.tag-pink
+	border-color: $pink-400
+	color: $pink-600
+
+	&:hover
+		background-color: $pink-50
+		color: $pink-700
+
+	.tag-count
+		background-color: $pink-100
+		color: $pink-700
+
+/* ROSÉ */
+
+.tag.tag-rose
+	border-color: $rose-400
+	color: $rose-600
+
+	&:hover
+		background-color: $rose-50
+		color: $rose-700
+
+	.tag-count
+		background-color: $rose-100
+		color: $rose-700
+
+/* ORANGE */
+
+.tag.tag-orange
+	border-color: $orange-400
+	color: $orange-600
+
+	&:hover
+		background-color: $orange-50
+		color: $orange-700
+
+	.tag-count
+		background-color: $orange-100
+		color: $orange-700
+
+/* INVERTED COLORS */
+
+.tag-invert
+	background-color: $primary-400
+	border-color: $primary-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $primary-500
+
+	.tag-count
+		background-color: $primary-100
+		color: $primary-700
+
+/* GRAY */
+
+.tag.tag-gray-invert
+	background-color: $gray-400
+	border-color: $gray-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $gray-500
+
+	.tag-count
+		background-color: $gray-100
+		color: $gray-700
+
+/* DANGER */
+
+.tag.tag-danger-invert
+	background-color: $danger-400
+	border-color: $danger-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $danger-500
+
+	.tag-count
+		background-color: $danger-100
+		color: $danger-700
+
+/* WARNING */
+
+.tag.tag-warning-invert
+	background-color: $warning-400
+	border-color: $warning-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $warning-500
+
+	.tag-count
+		background-color: $warning-100
+		color: $warning-700
+
+/* SUCCESS */
+
+.tag.tag-success-invert
+	background-color: $success-400
+	border-color: $success-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $success-500
+
+	.tag-count
+		background-color: $success-100
+		color: $success-700
+
+/* BLUE GRAY */
+
+.tag.tag-blue-gray-invert
+	background-color: $blue-gray-400
+	border-color: $blue-gray-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $blue-gray-500
+
+	.tag-count
+		background-color: $blue-gray-100
+		color: $blue-gray-700
+
+/* BLUE LIGHT */
+
+.tag.tag-blue-light-invert
+	background-color: $blue-light-400
+	border-color: $blue-light-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $blue-light-500
+
+	.tag-count
+		background-color: $blue-light-100
+		color: $blue-light-700
+
+/* BLUE */
+
+.tag.tag-blue-invert
+	background-color: $blue-400
+	border-color: $blue-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $blue-500
+
+	.tag-count
+		background-color: $blue-100
+		color: $blue-700
+
+/* INDIGO */
+
+.tag.tag-indigo-invert
+	background-color: $indigo-400
+	border-color: $indigo-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $indigo-500
+
+	.tag-count
+		background-color: $indigo-100
+		color: $indigo-700
+
+/* PINK */
+
+.tag.tag-pink-invert
+	background-color: $pink-400
+	border-color: $pink-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $pink-500
+
+	.tag-count
+		background-color: $pink-100
+		color: $pink-700
+
+/* ROSÉ */
+
+.tag.tag-rose-invert
+	background-color: $rose-400
+	border-color: $rose-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $rose-500
+
+	.tag-count
+		background-color: $rose-100
+		color: $rose-700
+
+/* ORANGE */
+
+.tag.tag-orange-invert
+	background-color: $orange-400
+	border-color: $orange-400
+	color: $white
+
+	&:hover
+		background-color: $white
+		color: $orange-500
+
+	.tag-count
+		background-color: $orange-100
+		color: $orange-700

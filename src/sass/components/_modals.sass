@@ -1,0 +1,45 @@
+.modal
+	padding: 0
+	background: rgba(16, 24, 40, 0.7)
+	backdrop-filter: blur(8px) !important
+	@include shadow-lg
+
+
+	.modal-dialog
+
+		.modal-content
+			padding: 1.5rem
+			border-radius: 0.75rem
+			border: none
+
+			.modal-header
+				padding: 0
+				border: none
+
+			.modal-title
+				@extend .text-d-xs-semibold
+				color: $black !important
+				margin-bottom: 0.5rem
+
+			.modal-body
+				padding: 1rem 0
+
+			.modal-actions
+				padding: 1rem 0 0 0
+				border: none
+				display: block !important
+
+				.btn
+					width: 100%
+
+			.btn-close
+				position: absolute
+				right: 1rem
+				top: 1rem
+
+			.feat-icon
+				margin-bottom: 20px
+
+@media (min-width: 576px)
+	.modal-sm
+		--bs-modal-width: 400px

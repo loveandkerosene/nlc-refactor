@@ -1,0 +1,103 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") Components
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Empty States
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Empty States
+					.card-body
+						.content
+							.row
+								.col
+									.empty-state.state-primary
+										.content
+											.feat-icon
+												.feat-icon-circle.feat-icon-lg
+													i.fa-regular.fa-bars-progress
+										.content
+											h5.d-block
+												| You have no requests
+										
+											h5.d-block
+												small You currently have no active requests being worked by our teams.
+										.actions
+											button.btn.btn-md.btn-primary.d-inline-block
+												i.fa-regular.fa-plus
+												| Create a request
+
+								.col
+									.empty-state.state-primary
+										.content
+											.feat-icon
+												.feat-icon-circle.feat-icon-lg
+													i.fa-regular.fa-bars-progress
+										.content
+											h5.d-block
+												| No requests found
+										
+											h5.d-block
+												small Your search “Website design” did not match any projects. Please try again.
+										.actions
+											button.btn.btn-md.btn-secondary-gray.d-inline-block Clear search
+											button.btn.btn-md.btn-primary.d-inline-block
+												i.fa-regular.fa-plus
+												| Create a request
+
+								.col
+									.empty-state.state-gray
+										.content
+											.feat-icon
+												.feat-icon-circle.feat-icon-lg
+													i.fa-regular.fa-user
+										.content
+											h5.d-block
+												| No users found
+										
+											h5.d-block
+												small Your search “John” did not match any users. Please try again.
+										.actions
+											button.btn.btn-md.btn-secondary-gray.d-inline-block Clear search
+											button.btn.btn-md.btn-primary.d-inline-block
+												i.fa-regular.fa-magnifying-glass
+												| New search
+
+							.row
+
+								.col
+									.empty-state.empty-state-h.state-primary
+										.container-empty-state
+											.content
+												.feat-icon
+													.feat-icon-circle.feat-icon-lg
+														i.fa-regular.fa-bars-progress
+											.content
+												h5.d-block
+													.text-left No requests found
+											
+												span Your search “Website design” did not match any projects. Please try again.
+
+												.actions
+													button.btn.btn-md.btn-secondary-gray.d-inline-block Clear search
+													button.btn.btn-md.btn-primary.d-inline-block
+														i.fa-regular.fa-plus
+														| Create a request

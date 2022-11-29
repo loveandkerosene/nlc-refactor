@@ -1,0 +1,99 @@
+.banner
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-between
+	@extend .align-items-center
+	padding: 0.75rem 1.5rem
+	border: 1px solid transparent
+	border-radius: 0.5rem
+	position: relative
+
+	.content
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-start
+		@extend .align-items-center
+		gap: 1rem
+		padding: 0 !important
+
+		.close-banner
+			font-size: 1.25rem !important
+			margin: 0 0 0 0.5rem
+
+		.text
+			@extend .d-flex
+			@extend .flex-column
+			@extend .justify-content-center
+			@extend .align-items-start
+			gap: 0.5rem
+
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+
+			h6
+				margin-bottom: 0
+				font-weight: 600
+
+
+				small
+					font-weight: 400
+
+@media (max-width: 1280px)
+	
+	.banner
+		flex-direction: column !important
+		gap: 1rem
+
+		.content
+			width: 100%
+			flex-direction: row !important
+
+			.close-banner
+				position: absolute
+				top: 0.875rem
+				right: 1rem
+
+@media (max-width: 768px)
+	
+	.banner
+		flex-direction: column !important
+		gap: 1rem
+
+		.content
+			width: 100%
+			flex-direction: column !important
+			text-align: center
+
+			.btn
+				width: 100% !important
+
+.banner.banner-primary
+	background-color: $primary-25
+	border-color: $primary-400 !important
+	color: $primary-500
+
+	.feat-icon-circle
+		@extend .feat-icon-primary
+
+	h6 
+		color: $primary-700
+		word-wrap: wrap
+
+		small
+			color: $primary-600
+
+.banner.banner-gray
+	background-color: $gray-25
+	border-color: $gray-300
+
+	.feat-icon-circle
+		@extend .feat-icon-gray
+
+	h6 
+		color: $gray-700
+		word-wrap: wrap
+
+		small
+			color: $gray-600

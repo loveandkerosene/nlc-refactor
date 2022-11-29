@@ -1,0 +1,43 @@
+.pagination
+
+
+	.page-item
+
+		a.page-link
+			border-color: $gray-300
+			color: $gray-600 !important
+			font-size: 14px !important
+
+			&:hover
+				background-color: $gray-50
+				color: $gray-800 !important
+
+			&:focus
+				@include ring-primary-4
+				background-color: $primary-50
+				color: $primary-400 !important
+
+	.page-item.active
+		a.page-link
+			color: $white !important
+			background-color: $primary-400
+
+	.page-item.disabled
+
+		a.page-link
+			color: $gray-400 !important
+			background-color: $gray-50
+
+.pagination.pagination-sm
+
+	.page-item
+
+		a.page-link
+			font-size: 12px !important
+
+.pagination.pagination-lg
+
+	.page-item
+
+		a.page-link
+			font-size: 1rem !important

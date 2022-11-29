@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap')
+
+html
+	font-size: 16px !important
+
+html,
+body
+	margin: 0
+	padding: 0
+	-moz-osx-font-smoothings: grayscale
+	-webkit-font-smoothing: antialiased
+	font-family: 'Inter', sans-serif
+	font-size: 0.875rem
+	color: $gray-600
+	height:100%
+
+	body
+		background-color: $body-bg !important
+
+		a
+			color: $blue-600
+			font-size: 0.875rem
+			font-weight: 400 !important
+
+// ---- SCROLLBAR ---- //
+
+/* width */
+::-webkit-scrollbar
+	width: 10px !important
+
+/* Track */
+::-webkit-scrollbar-track
+	background: $gray-25 !important
+
+/* Handle */
+::-webkit-scrollbar-thumb
+	background: $gray-400 !important
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+	background: $gray-500 !important
+
+// ---- MAIN PANEL: OVERRIDE ---- //
+
+//---- ACCOUNT MANAGER CHAT BUBBLE ----//
+
+.chat-bubble
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-start
+	@extend .align-items-center
+	@extend .btn
+	@extend .btn-secondary-dark
+	padding: 0.75rem 0.85rem
+	border-radius: 0.5rem
+	position: fixed
+	bottom: 1rem
+	right: 1rem
+	gap: 0.5rem
+
+	i
+		@extend .text-lg-regular
+		line-height: 1rem
+
+	.bubble-text
+		@extend .text-sm-medium
+
+.text-bg-success
+	background-color: $success-600 !important
+	color: white !important
+
+.form-check-input
+
+	&:hover
+		cursor: pointer

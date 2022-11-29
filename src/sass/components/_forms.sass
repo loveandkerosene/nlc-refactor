@@ -1,0 +1,414 @@
+label.form-label
+	@extend .text-sm-medium
+	color: $gray-700
+	margin-bottom: 0.375rem
+
+.form-control
+	@extend .text-sm-regular
+	border: 1px solid $gray-300
+	border-radius: 0.5rem
+	color: $gray-900
+	padding: 0.625rem 0.875rem
+	position: relative
+	min-height: 42px
+
+	&::file-selector-button	
+		margin: 0
+		background-color: $gray-100
+		border: none
+		color: $gray-500
+		border-radius: 0.25rem
+		margin-right: 14px
+
+	&::placeholder
+		@extend .text-sm-regular
+		color: $gray-500
+
+	&:focus
+		box-shadow: 0px 0px 0px 4px $primary-100
+		border-color: $primary-300
+
+	&:disabled
+		background-color: $gray-50
+		color: $gray-300
+
+.form-control.form-control-sm
+	@extend .text-xs-regular
+	min-height: 32px
+	padding: 0.375rem 0.625rem
+
+	&::placeholder
+		@extend .text-xs-regular
+
+
+.form-control.form-control-lg
+	@extend .text-md-regular
+	min-height: 54px
+	padding: 0.875rem 1.25rem
+
+	&::placeholder
+		@extend .text-md-regular
+
+.form-control-plaintext
+	@extend .text-sm-regular
+	color: $gray-900
+
+// SELECTS //
+
+.form-select
+	@extend .text-sm-regular
+	border: 1px solid $gray-300
+	border-radius: 0.5rem
+	color: $gray-900
+	padding: 0.625rem 2rem 0.625rem 0.875rem
+	position: relative
+	min-height: 42px
+
+	&::before, &::after
+		margin-left: 1rem
+
+	&::placeholder
+		@extend .text-sm-regular
+		color: $gray-500
+
+	&:focus
+		box-shadow: 0px 0px 0px 4px $primary-100
+		border-color: $primary-300
+
+	&:disabled
+		background-color: $gray-50
+		color: $gray-300
+
+	.form-select.form-select-sm
+		@extend .text-xs-regular
+		height: 32px !important
+		padding: 0.375rem 0.625rem
+
+		&::placeholder
+			@extend .text-xs-regular
+
+
+	.form-select.form-select-lg
+		@extend .text-md-regular
+		min-height: 54px
+		padding: 0.875rem 1.25rem
+
+		&::placeholder
+			@extend .text-md-regular
+
+//---------- CHECKBOX ----------//
+
+
+/* DEFAULT */
+
+.check-contain *,
+.check-contain *::before,
+.check-contain *::after 
+	box-sizing: content-box !important
+
+.check-contain input 
+	position: absolute
+	z-index: -1
+	opacity: 0
+
+.check-contain span 
+	font-size: 0.875rem
+	font-family: inherit
+	margin-left: 2rem
+
+.check-contain 
+	display: table
+	position: relative
+	cursor: pointer
+	line-height: 1.4rem
+
+.check-contain input[type="checkbox"] ~ .check-input 
+	position: absolute
+	top: 0
+	left: 0
+	height: 1.25rem
+	width: 1.25rem
+	background: #FFF
+	transition: background 250ms
+	border: 1px solid #D0D5DD
+	border-radius: 0.25rem
+
+.check-contain input[type="radio"] ~ .check-input 
+	position: absolute
+	top: 0
+	left: 0
+	height: 1.25rem
+	width: 1.25rem
+	background: #FFF
+	transition: background 250ms
+	border: 1px solid #D0D5DD
+	border-radius: 3rem
+
+.check-contain input[type="checkbox"] ~ .check-input::after 
+	content: ""
+	position: absolute
+	display: none
+	left: 7px
+	top: 1px
+	width: 0.3rem
+	height: 0.75rem
+	border: solid #5E00E2
+	border-width: 0 2px 2px 0
+	transition: background 250ms
+	transform: rotate(45deg)
+
+.check-contain input[type="radio"] ~ .check-input::after 
+	content: ""
+	position: absolute
+	display: none
+	left: 6px
+	top: 6px
+	width: 0.5rem
+	height: 0.5rem
+	border-radius: 3rem
+	background: #5E00E2
+	transition: background 250ms
+
+.check-contain input[type="checkbox"]:disabled ~ .check-input::after 
+	border-color: #ffffff
+
+.check-contain input:checked ~ .check-input::after 
+	display: block
+
+.check-contain:hover input[type="checkbox"]:not([disabled]) ~ .check-input,
+.check-contain input[type="checkbox"]:focus ~ .check-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+.check-contain:hover input[type="radio"]:not([disabled]) ~ .check-input,
+.check-contain input[type="radio"]:focus ~ .check-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+.check-contain input:focus ~ .check-input 
+	box-shadow: 0 0 0 4px #E9DDFF
+
+.check-contain input[type="checkbox"]:checked ~ .check-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+.check-contain input[type="radio"]:checked ~ .check-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+.check-contain input[type="checkbox"]:disabled ~ .check-input,
+.check-contain input[type="radio"]:disabled ~ .check-input 
+	opacity: 0.5
+	cursor: not-allowed
+
+.check-contain input[type="radio"]:disabled ~ .check-input::after 
+	background: #ffffff
+
+.check-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .check-input,
+.check-contain input[type="checkbox"]:checked:focus ~ .check-input 
+	background: 5E00E2
+	border-color: #5E00E2
+
+.check-contain:hover input[type="radio"]:not([disabled]):checked ~ .check-input,
+.check-contain input[type="radio"]:checked:focus ~ .check-input 
+	background: #ffffff
+	border-color: #5E00E2
+
+/* SMALL */
+
+.check-contain-sm *,
+.check-contain-sm *::before,
+.check-contain-sm *::after 
+	box-sizing: content-box !important
+
+
+.check-contain-sm input 
+	position: absolute
+	z-index: -1
+	opacity: 0
+
+
+.check-contain-sm span 
+	font-size: 12px
+	margin-left: 0.5rem
+
+
+.check-contain-sm 
+	display: block
+	position: relative
+	padding-left: 1.25rem
+	cursor: pointer
+	margin-bottom: 0.4rem
+	font-size: 12px
+	line-height: 1.25rem
+
+
+.check-contain-sm input[type="checkbox"] ~ .check-sm-input 
+	position: absolute
+	top: 0
+	left: 0
+	height: 1rem
+	width: 1rem
+	background: #FFF
+	transition: background 250ms
+	border: 1px solid #D0D5DD
+	border-radius: 0.25rem
+
+
+.check-contain-sm input[type="radio"] ~ .check-sm-input 
+	position: absolute
+	top: 0
+	left: 0
+	height: 1rem
+	width: 1rem
+	background: #FFF
+	transition: background 250ms
+	border: 1px solid #D0D5DD
+	border-radius: 3rem
+
+
+.check-contain-sm input[type="checkbox"] ~ .check-sm-input::after 
+	content: ""
+	position: absolute
+	display: none
+	left: 5px
+	top: 2px
+	width: 0.23rem
+	height: 0.5rem
+	border: solid #5E00E2
+	border-width: 0 2px 2px 0
+	transition: background 250ms
+	transform: rotate(45deg)
+
+
+.check-contain-sm input[type="radio"] ~ .check-sm-input::after 
+	content: ""
+	position: absolute
+	display: none
+	left: 5px
+	top: 5px
+	width: 0.375rem
+	height: 0.375rem
+	border-radius: 3rem
+	background: #5E00E2
+	transition: background 250ms
+
+
+.check-contain-sm input[type="checkbox"]:disabled ~ .check-sm-input::after 
+	border-color: #ffffff
+
+
+.check-contain-sm input:checked ~ .check-sm-input::after 
+	display: block
+
+
+.check-contain-sm:hover input[type="checkbox"]:not([disabled]) ~ .check-sm-input,
+.check-contain-sm input[type="checkbox"]:focus ~ .check-sm-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+
+.check-contain-sm:hover input[type="radio"]:not([disabled]) ~ .check-sm-input,
+.check-contain-sm input[type="radio"]:focus ~ .check-sm-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+
+.check-contain-sm input:focus ~ .check-sm-input 
+	box-shadow: 0 0 0 4px #E9DDFF
+
+
+.check-contain-sm input[type="checkbox"]:checked ~ .check-sm-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+
+.check-contain-sm input[type="radio"]:checked ~ .check-sm-input 
+	background: #F9F5FF
+	border-color: #5E00E2
+
+
+.check-contain-sm input[type="checkbox"]:disabled ~ .check-sm-input,
+.check-contain-sm input[type="radio"]:disabled ~ .check-sm-input 
+	opacity: 0.5
+	cursor: not-allowed
+
+
+.check-contain-sm input[type="radio"]:disabled ~ .check-sm-input::after 
+	background: #ffffff
+
+
+.check-contain-sm:hover input[type="checkbox"]:not([disabled]):checked ~ .check-sm-input,
+.check-contain-sm input[type="checkbox"]:checked:focus ~ .check-sm-input 
+	background: 5E00E2
+	border-color: #5E00E2
+
+
+.check-contain-sm:hover input[type="radio"]:not([disabled]):checked ~ .check-sm-input,
+.check-contain-sm input[type="radio"]:checked:focus ~ .check-sm-input 
+	background: #ffffff
+	border-color: #5E00E2
+
+
+// RANGE //
+
+// Range
+//
+// Style range inputs the same across browsers. Vendor-specific rules for pseudo
+// elements cannot be mixed. As such, there are no shared styles for focus or
+// active states on prefixed selectors.
+
+.form-range 
+
+	&::-webkit-slider-thumb
+		background-color: $primary-500
+		width: 1.25rem
+		height: 1.25rem
+		margin-top: -0.35rem
+		background-color: $white
+		border: 1px solid $primary-500
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06)
+
+		&:active
+			background-color: $primary-500
+			border-color: $primary-600
+			box-shadow: 0 0 0 4px $primary-100
+
+
+	&::-webkit-slider-runnable-track 
+		background-color: $gray-200
+		height: 0.5rem
+		border-radius: 0.25rem
+
+	&::-moz-range-track 
+		background-color: $gray-200 !important
+		height: 0.5rem
+		border-radius: 0.25rem
+
+	&::-moz-range-thumb
+		background-color: $primary-500 !important
+		width: 1.25rem !important
+		height: 1.25rem !important
+		margin-top: -0.35rem !important
+		background-color: $white !important
+		border: 1px solid $primary-500 !important
+		@include shadow-md
+
+		&:active
+			background-color: $primary-500 !important
+			border-color: $primary-600 !important
+			box-shadow: 0 0 0 4px $primary-100 !important
+
+// INPUT GROUPS //
+
+/* BASE */
+
+.input-group
+
+	.form-control
+		border: 1px 0 solid $gray-300
+
+	.input-group-text
+		background-color: $gray-50
+		color: $gray-500
+		border-color: $gray-300

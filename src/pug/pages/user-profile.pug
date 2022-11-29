@@ -1,0 +1,185 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| User Profile
+						.header-content
+							.page-title 
+								i.fa-light.fa-user
+								| User Profile
+							.actions
+								.btn.btn-tertiary-gray(data-bs-toggle="tooltip" data-bs-title="Copy link to profile")
+									i.fa-regular.fa-link
+								.btn.btn-secondary-color(data-bs-toggle="tooltip" data-bs-title="Check onboarding information")
+									i.fa-regular.fa-user-tag.me-2
+									| Onboarding
+								.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+									i.fa-regular.fa-floppy-disk.me-2
+									| Save
+					.card-body
+						.contents
+							
+							.row
+								.col-4
+									h6 Profile Picture
+									span Maecenas ultrices eu sapien at sollicitudin. In ac lacus sed nisi congue tristique.
+								.col-7.offset-1
+									.container-fluid
+										.d-flex.flex-row.justify-items-start.align-items-center.gap-5.align-items-stretch
+											.d-flex.flex-column.justify-items-center.align-items-center
+												.avatar.avatar-2xl
+												.actions.text-center
+													.btn.btn-sm.btn-secondary-gray.mt-2
+														| Change Photo
+													.mt-2
+														a.link-danger
+															.text-xs Remove Photo
+											.banner.banner-primary
+												.content
+													.feat-icon.feat-icon-primary
+														.feat-icon-circle.feat-icon-primary
+															i.fa-regular.fa-lightbulb-exclamation-on
+													div
+														| You can upload files up to 
+														b 3MB 
+														br
+														| and with a maximum resolution of 
+														b 2000 x 2000 
+														| pixels
+
+							.content-divider
+
+							.row
+								.col-4
+									h6 Personal Information
+									span Maecenas ultrices eu sapien at sollicitudin. In ac lacus sed nisi congue tristique.
+								.col-7.offset-1
+									.container-fluid
+										.row
+
+											.col
+												label.form-label(for="ControlInput1") Full Name
+												input.form-control#ControlInput1(type="text" placeholder="Your full name")
+											.col
+												label.form-label(for="ControlInput1") Email Address
+												input.form-control#ControlInput1(type="text" placeholder="Your email address")
+										.row.mt-3
+
+											.col
+												label.form-label(for="ControlInput1") Phone Number
+												input.form-control#ControlInput1(type="text" placeholder="+00 00000000")
+											.col
+												label.form-label(for="ControlInput1") ZIP Code
+												input.form-control#ControlInput1(type="text" placeholder="000000")
+											.col
+												label.form-label(for="ControlInput1") Timezone
+												select.form-select.form-select-sm(aria-label="Select Example")
+													option(selected) Select your timezone
+													option(value="1") Option 1
+													option(value="2") Option 2
+													option(value="3") Option 3
+													option(value="4") Option 4
+
+							.content-divider
+
+							.row
+								.col-4
+									h6 Account Information
+									span Maecenas ultrices eu sapien at sollicitudin. In ac lacus sed nisi congue tristique.
+								.col-7.offset-1
+									.container-fluid
+										.row
+
+											.col
+												.position-relative
+													label.form-label(for="ControlInput1") Accounts
+													input.form-control#ControlInput1(type="text" placeholder="")
+													.tag.tag-sm.position-absolute(style="top: 2.15rem; left: 0.5rem")
+														.tag-content 
+															| Default
+															i.fa-regular.fa-close
+											.col
+												label.form-label(for="ControlInput1") Company
+												input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+
+										.row.mt-3
+
+											.col
+												label.form-label(for="ControlInput1") Account Manager
+												input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+											.col
+												label.form-label(for="ControlInput1") Rolse
+												input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+
+							.content-divider
+
+							.row
+								.col-4
+									h6 Change Password
+									span Maecenas ultrices eu sapien at sollicitudin. In ac lacus sed nisi congue tristique.
+								.col-7.offset-1
+									.container-fluid
+										.row
+
+											.col
+												label.form-label(for="ControlInput1") New Password
+												input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+											.col
+												label.form-label(for="ControlInput1") Comfirm New Password
+												input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+
+							.content-divider
+
+							.row
+								.col-4
+									h6.danger-500 Suspend Account
+									span Suspending this account will archive the account and all its users. User's subscription of the account will be deleted. You will still be able to impersonate the user but user will not be able to log in
+								.col-7.offset-1
+									.container-fluid
+										.row
+
+											.col
+												button.btn.btn-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmSuspend')
+													i.fa-regular.fa-ban
+													| Suspend Account
+
+
+											//- MODAL
+
+											#confirmSuspend.modal.modal-sm.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+												.modal-dialog.modal-dialog-centered
+													.modal-content
+														button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+														.modal-body
+															.text-center
+																.feat-icon
+																	.feat-icon-circle.feat-icon-lg.feat-icon-danger
+																		i.fa-regular.fa-circle-exclamation
+
+																.modal-title Are you sure?
+																| Are you sure you would like to suspend this account?
+																| You can't revert this action
+														.modal-actions
+															.row
+																.col-6
+																	button.btn.btn-danger.d-block(type='button') Suspend
+																.col-6
+																	button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel

@@ -1,0 +1,429 @@
+// LINK //
+
+a.link-primary
+	@extend .text-sm-medium
+	color: $primary-500
+
+	&:hover
+		color: $primary-600
+		cursor: pointer
+
+a.link-gray
+	@extend .text-sm-medium
+	color: $gray-500
+
+	&:hover
+		color: $gray-600
+		cursor: pointer
+
+a.link-warning
+	@extend .text-sm-medium
+	color: $warning-500
+
+	&:hover
+		color: $warning-600
+		cursor: pointer
+
+a.link-danger
+	@extend .text-sm-medium
+	color: $danger-500
+
+	&:hover
+		color: $danger-600
+		cursor: pointer
+
+a.link-success
+	@extend .text-sm-medium
+	color: $success-500
+
+	&:hover
+		color: $success-600
+		cursor: pointer
+
+/* SIZES */
+
+button.btn, .btn, a.btn
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-center
+	@extend .align-items-center
+	@extend .flex-nowrap
+	font-size: 14px
+	padding: 0.625rem 1rem !important
+	transition: all 0.3s !important
+	border-radius: 8px !important
+	background-color: none
+	z-index: 2
+	gap: .5rem
+	min-height: 42px
+	min-width: 42px
+	font-weight: 500
+	min-width: fit-content
+
+
+	i 
+		font-size: 1rem
+
+	&:hover
+		@include shadow-lg
+		cursor: pointer   
+
+.btn-sm 
+	@extend .text-sm-medium
+	padding: 0.5rem 0.875rem !important
+	min-height: 0
+	font-size: 12px !important
+	gap: 0.125rem
+
+
+	div 
+		@extend .text-xs-medium
+
+	i 
+		font-size: 0.875rem
+
+	&:hover
+		@include shadow-md
+
+.btn-lg 
+	padding: 0.75rem 1.125rem !important
+	font-size: 1rem !important
+
+	div 
+		font-size: 1rem !important
+
+
+	i 
+		font-size: 1.125rem !important
+
+	&:hover
+		@include shadow-lg
+
+.btn-xl 
+	padding: 0.875rem 1.25rem !important
+	@extend .text-md-medium
+
+	div 
+		@extend .text-md-medium
+
+
+	i 
+		font-size: 1.125rem !important
+
+	&:hover
+		@include shadow-lg
+
+.btn-2xl 
+	padding: 1rem 1.75rem !important
+	@extend .text-lg-medium
+
+	div 
+		@extend .text-lg-medium
+
+
+	i 
+		font-size: 1.25rem !important
+
+	&:hover
+		@include shadow-xl
+
+   
+
+/* TYPES */
+
+.lead-icon
+
+	i
+		margin-right: 12px
+
+.trail-icon
+	i
+		margin-left: 12px
+
+.lead-dot
+	i
+		font-size: 12px
+		margin-right: 12px
+
+.btn-sm.icon
+	padding: 8px
+	text-align: center
+	line-height: 0
+	width: 38px
+	height: 38px
+
+.btn.icon
+	padding: 8px
+	text-align: center
+	line-height: 0
+	width: 42px
+	height: 42px
+
+.btn-lg.icon
+	padding: 8px
+	text-align: center
+	line-height: 0
+	width: 42px
+	height: 42px
+
+.btn-xl.icon
+	padding: 8px
+	text-align: center
+	line-height: 0
+	width: 50px
+	height: 50px
+
+.btn-2xl.icon
+	padding: 8px
+	text-align: center
+	line-height: 0
+	width: 62px
+	height: 62px
+
+
+
+
+
+
+/* PRIMARY */
+
+.btn-primary:not(.btn-link)
+	color: white
+	background-color: $primary-500
+	border: 1px solid $primary-600
+
+
+.btn-primary:hover 
+	background-color: $primary-700
+	border-color: $primary-800
+	// box-shadow: 0px 36px 14px rgba(58, 0, 146, 0.01), 0px 20px 12px rgba(58, 0, 146, 0.05), 0px 9px 9px rgba(58, 0, 146, 0.09), 0px 2px 5px rgba(58, 0, 146, 0.1), 0px 0px 0px rgba(58, 0, 146, 0.1)
+
+
+.btn-primary:focus, .btn-primary:active 
+	background-color: $primary-500
+	outline: 4px solid $primary-100
+
+
+.btn-primary:disabled 
+	background-color: $primary-200
+	border-color: $primary-200
+
+
+// SECONDARY COLOR //
+
+.btn-secondary-color:not(.btn-link)
+	color: $primary-600
+	background-color: $primary-100
+	border: 1px solid $primary-100
+
+
+.btn-secondary-color:hover 
+	background-color: $primary-300
+	border-color: $primary-300
+	color: $white
+
+
+.btn-secondary-color:focus, .btn-secondary-color:active, .btn.btn-secondary-color.dropdown-toggle:focus
+	background-color: $white
+	outline: 4px solid $gray-100
+	color: $primary-600
+
+
+.btn-secondary-color:disabled 
+	background-color: $primary-25
+	border-color: $primary-25
+	color: $primary-200
+
+
+// SECONDARY GRAY //
+
+.btn-secondary-gray:not(.btn-link)
+	color: $gray-700
+	background-color: $white
+	border: 1px solid $gray-300
+
+
+.btn-secondary-gray:hover 
+	background-color: $gray-50
+	border-color: $gray-300
+	// box-shadow: 0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.03), 0px 15px 15px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05)
+
+
+.btn-secondary-gray:focus, .btn-secondary-gray:active 
+	background-color: $white
+	outline: 4px solid $gray-100
+	color: $gray-700
+
+
+.btn-secondary-gray:disabled 
+	color: $gray-300
+	background-color: $white
+	border-color: $gray-200
+
+
+// SECONDARY DANGER //
+
+.btn-danger-secondary:not(.btn-link)
+	color: $danger-600
+	background-color: transparent
+	border: 1px solid transparent
+
+
+.btn-danger-secondary:hover 
+	background-color: $danger-400
+	border-color: $danger-500
+	color: $white
+
+
+.btn-danger-secondary:focus, .btn-danger-secondary:active 
+	background-color: $danger-400
+	outline: 4px solid $danger-100
+	color: $white
+
+
+.btn-danger-secondary:disabled 
+	background-color: $danger-25
+	border-color: $danger-25
+	color: $danger-200
+
+
+// SECONDARY DARK (MARKETPLACE ONLY) //
+
+.btn-secondary-dark:not(.btn-link)
+	color: $white
+	background-color: $gray-800
+	border: 1px solid $gray-800
+
+.btn-secondary-dark:hover 
+	background-color: $gray-900
+	border-color: $gray-900
+	// box-shadow: 0px 59px 23px rgba(0, 0, 0, 0.01), 0px 33px 20px rgba(0, 0, 0, 0.03), 0px 15px 15px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05)
+
+
+.btn-secondary-dark:focus, .btn-secondary-dark:active 
+	background-color: $gray-800
+	outline: 4px solid $gray-100
+	color: $white
+
+
+.btn-secondary-dark:disabled 
+	color: $white
+	background-color: $gray-200
+	border-color: $gray-200
+
+
+// TERTIARY COLOR //
+
+.btn-tertiary-color:not(.btn-link)
+	color: $primary-600
+	background-color: none
+	border: none
+	// box-shadow: none
+
+
+.btn-tertiary-color:hover 
+	background-color: $primary-50
+	border: none
+	// box-shadow: none
+
+
+.btn-tertiary-color:focus, .btn-tertiary-color:active 
+	background-color: none
+	box-shadow: none
+	color: $primary-600
+
+
+.btn-tertiary-color:disabled 
+	color: $primary-200
+	background-color: none
+	border: none
+	// box-shadow: none
+
+
+// TERTIARY GRAY //
+
+.btn-tertiary-gray:not(.btn-link)
+	color: $gray-500
+	background: none
+	border: none
+	// box-shadow: none
+
+
+.btn-tertiary-gray:hover 
+	color: $gray-600
+	background-color: $gray-200
+	border: none
+	box-shadow: none
+
+
+.btn-tertiary-gray:focus, .btn-tertiary-gray:active 
+	background-color: none
+	box-shadow: none
+	color: $gray-500
+
+
+.btn-tertiary-gray:disabled 
+	color: $gray-300
+	background-color: none
+	border: none
+	// box-shadow: none
+
+
+// DANGER //
+
+.btn-danger:not(.btn-link) 
+	color: $white
+	background-color: $danger-600
+	border: 1px solid $danger-700
+
+.btn-danger:hover 
+	color: $white
+	background-color: $danger-700
+	border: 1px solid $danger-800
+	// box-shadow: 0px 82px 33px rgba(180, 35, 24, 0.01), 0px 46px 28px rgba(180, 35, 24, 0.03), 0px 20px 20px rgba(180, 35, 24, 0.04), 0px 5px 11px rgba(180, 35, 24, 0.05), 0px 0px 0px rgba(180, 35, 24, 0.05)
+
+
+.btn-danger:focus, .btn-danger:active 
+	background-color: $danger-600
+	outline: 4px solid $danger-100
+	color: $white
+
+
+.btn-danger:disabled 
+	color: $white
+	background-color: $danger-200
+	border: 1px solid $danger-200
+
+
+// SUCCESS //
+
+.btn-success:not(.btn-link) 
+	color: $white
+	background-color: $success-500
+	border: 1px solid $success-600
+
+.btn-success:hover 
+	background-color: $success-600
+	border-color: $success-700
+	// box-shadow: 0px 64px 26px rgba(5, 96, 58, 0.01), 0px 36px 22px rgba(5, 96, 58, 0.03), 0px 16px 16px rgba(5, 96, 58, 0.04), 0px 4px 9px rgba(5, 96, 58, 0.05), 0px 0px 0px rgba(5, 96, 58, 0.05)
+	color: $white
+
+
+.btn-success:focus, .btn-success:active 
+	background-color: $success-500
+	outline: 4px solid $success-100
+	color: $white
+
+
+.btn-success:disabled 
+	color: $success-200
+	background-color: $white
+	border-color: $success-300
+
+
+
+
+
+
+.btn-secondary-color, .btn-tertiary-gray, .btn-tertiary-color, .btn-link
+	box-shadow: none !important

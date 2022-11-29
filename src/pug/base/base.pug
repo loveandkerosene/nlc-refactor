@@ -1,0 +1,128 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
+		title Pug-Sass Starter
+		// Styles
+		//- link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous")
+		link(href="/assets/css/styles.min.css", rel="stylesheet")
+		script(src="https://kit.fontawesome.com/6826777e4e.js" crossorigin="anonymous")
+
+	body
+		.container-fluid.p-0
+
+			.main-content
+
+				//- SIDEBAR
+
+				nav.sidebar
+
+					.nav-container
+						a.brand
+							img(src="/assets/images/brand.png")
+						.top-menu
+							.impersonation-panel
+								.avatar-label-group
+									.avatar
+										.avatar-container
+										.online-indicator-on
+									.avatar-label-group-container
+										span.title John Oliveira
+										span.subtitle john@nlc.com
+								.tag.tag-danger
+									.tag-content 
+										i.fa-regular.fa-masks-theater
+										| Impersonating
+										i.fa-regular.fa-close.gray-600
+
+							ul
+								li
+									a.menu-item(href="dashboard.html") 
+										.link-content
+											i.fa-regular.fa-grid-2
+											div Dashboard
+								li
+									a.menu-item.active(href="#") 
+										.link-content
+											i.fa-regular.fa-bell
+											div Notifications
+										.badge 10
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-building
+											div Organizations
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-bars-progress
+											div Requests
+										.badge 10
+								li
+									a.menu-item(href="brands.html") 
+										.link-content
+											i.fa-regular.fa-medal
+											div Brands
+								li
+									a.menu-item(href="users.html") 
+										.link-content
+											i.fa-regular.fa-user
+											div Users
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-users
+											div Teams
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-cabinet-filing
+											div Accounts
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-file-chart-column
+											div Reports
+								li
+									a.menu-item(href="#") 
+										.link-content
+											i.fa-regular.fa-lightbulb-cfl-on
+											div Inspiration
+
+					.nav-container.bottom-container
+						ul
+							li
+								a.menu-item(href="#") 
+									.link-content
+										i.fa-regular.fa-credit-card
+										div Billing
+							li
+								a.menu-item(href="#") 
+									.link-content
+										i.fa-regular.fa-toolbox
+										div Tools
+							li
+								a.menu-item(href="#") 
+									.link-content
+										i.fa-regular.fa-life-ring
+										div Support
+
+				//- MAIN PANEL
+
+				.main-panel.overflow-hidden
+					include ../partials/header.pug
+					block content
+					//- include ../partials/footer.pug
+					block layout
+		.chat-bubble
+			i.fa-regular.fa-message
+			.bubble-text Support Chat
+
+		//- Scripts
+		script(src="./assets/js/scripts.min.js")
+		script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous")
+		script.
+			const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+			const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

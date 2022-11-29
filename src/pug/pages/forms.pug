@@ -1,0 +1,631 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#alerts.p-3.mb-4
+
+		.container
+
+			.text-d-md-semibold.black Forms
+
+			//- INPUT
+
+			.text-d-sm-medium.mt-3.gray-700 Inputs
+
+			.card.mt-4
+
+				//- INPUT SIZES
+				
+				.card-header Sizes
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- SMALL 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Small (SM)
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control.form-control-sm#ControlInput1(type="text" placeholder="Input Placeholder")
+						
+							.col-4
+
+								//- MEDIUM
+
+								.text-md-medium.gray-500.mb-2.mt-3 Medium (MD)
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+
+							.col-4
+
+								//- LARGE
+
+								.text-md-medium.gray-500.mb-2.mt-3 Large (LG)
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control.form-control-lg#ControlInput1(type="text" placeholder="Input Placeholder")
+
+			.card.mt-4
+
+				//- INPUT TYPES
+
+				.card-header Types
+
+				.card-body
+
+					.content
+
+						.row
+
+							//- INPUT SIZES
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Default
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control#ControlInput1(type="text" placeholder="Input Placeholder")
+							
+							.col-4
+
+								//- DISABLED
+
+								.text-md-medium.gray-500.mb-2.mt-3 Disabled
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control#ControlInput1(type="text" placeholder="Input Placeholder" aria-label="Disabled input example" disabled)
+
+							.col-4
+
+								//- READONLY
+								
+								.text-md-medium.gray-500.mb-2.mt-3 Readonly
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control#ControlInput1(type="text" value="Readonly input here..." aria-label="readonly input example" readonly)
+
+							.col-4
+
+								//- READONLY PLAIN TEXT
+								
+								.text-md-medium.gray-500.mb-2.mt-3 Readonly Plain Text
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control-plaintext#ControlInput1(type="text" value="Readonly plain text...")
+
+							.col-4
+
+								//- FILE INPUT
+								
+								.text-md-medium.gray-500.mb-2.mt-3 File Input
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control#ControlInput1(type="file")
+
+							.col-4
+
+								//- COLOR PICKER
+								
+								.text-md-medium.gray-500.mb-2.mt-3 Color Picker
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control.form-control-color#ControlInput1(type="color" value="#6B04FF" title="Choose a color")
+
+							.col-4
+
+								//- DATALIST
+								
+								.text-md-medium.gray-500.mb-2.mt-3 Datalist
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									input.form-control#ControlInput1(list="datalistOptions" placeholder="Type to search...")
+									datalist#datalistOptions
+										option(value="Pikachu")
+										option(value="Bulbasaur")
+										option(value="Charmander")
+										option(value="Squirtle")
+										option(value="Caterpie")
+										option(value="Pidgey")
+										option(value="Jigglypuff")
+
+			hr
+
+			//- SELECT
+
+
+			.text-d-sm-medium.mt-3.gray-700 Selects
+			
+			.card.mt-4
+
+				//- SELECT SIZES
+				
+				.card-header Sizes
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- SMALL 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Small (SM)
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									select.form-select.form-select-sm(aria-label="Select Example")
+										option(selected) Open This Select
+										option(value="1") Option 1
+										option(value="2") Option 2
+										option(value="3") Option 3
+										option(value="4") Option 4
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Default
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									select.form-select(aria-label="Select Example")
+										option(selected) Open This Select
+										option(value="1") Option 1
+										option(value="2") Option 2
+										option(value="3") Option 3
+										option(value="4") Option 4
+
+							.col-4
+
+								//- LARGE 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Large (LG)
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									select.form-select.form-select-lg(aria-label="Select Example")
+										option(selected) Open This Select
+										option(value="1") Option 1
+										option(value="2") Option 2
+										option(value="3") Option 3
+										option(value="4") Option 4
+
+			.card.mt-4
+
+				//- SELECT TYPES
+				
+				.card-header Types
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Default
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									select.form-select(aria-label="Select Example")
+										option(selected) Open This Select
+										option(value="1") Option 1
+										option(value="2") Option 2
+										option(value="3") Option 3
+										option(value="4") Option 4
+
+							.col-4
+
+								//- DISABLED 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Disabled
+								.mb-3
+									label.form-label(for="ControlInput1") Input Label
+									select.form-select(aria-label="Select Example" disabled)
+										option(selected) Open This Select
+										option(value="1") Option 1
+										option(value="2") Option 2
+										option(value="3") Option 3
+										option(value="4") Option 4
+
+			//- CHECKBOX
+
+			.text-d-sm-medium.mt-3.gray-700 Checkbox
+
+			.card.mt-4
+
+				//- CHECKBOX SIZES
+				
+				.card-header Sizes
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Small (SM)
+								
+								.mb-3
+									label.check-contain-sm
+										span Default
+										input(type="checkbox")
+										.check-sm-input
+								.mb-3
+									label.check-contain-sm
+										span Default
+										input(type="checkbox" checked)
+										.check-sm-input
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Default
+								
+								.mb-3
+									label.check-contain
+										span Default
+										input(type="checkbox")
+										.check-input
+
+								.mb-3
+									label.check-contain
+										span Checked
+										input(type="checkbox" checked)
+										.check-input
+
+			//- RADIO
+
+			.text-d-sm-medium.mt-3.gray-700 Radio
+
+			.card.mt-4
+
+				//- RADIO SIZES
+				
+				.card-header Sizes
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Small (SM)
+								
+								.mb-3
+									label.check-contain-sm
+										span Default
+										input(type="radio" name="radio")
+										.check-sm-input
+								.mb-3
+									label.check-contain-sm
+										span Default
+										input(type="radio" name="radio")
+										.check-sm-input
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Default
+								
+								.mb-3
+									label.check-contain
+										span Default
+										input(type="radio" name="radio")
+										.check-input
+
+								.mb-3
+									label.check-contain
+										span Default
+										input(type="radio" name="radio")
+										.check-input
+
+			//- RANGE
+
+			.text-d-sm-medium.mt-3.gray-700 Range
+
+			.card.mt-4
+
+				//- RANGE TYPES
+				
+				.card-header Types
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Default
+								
+								.mb-3
+									label.form-label(for="customRange1") Example range
+									input.form-range#customRange1(type="range" name="radio" min="0" max="5" step="0.5")
+
+			//- INPUT GROUP
+
+			.text-d-sm-medium.mt-3.gray-700 Input Group
+
+			.card.mt-4
+
+				//- INPUT GROUP TYPES
+				
+				.card-header Types
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Input Single Addon Leading
+								
+								.mb-3
+									.input-group.mb-3
+										span.input-group-text
+											i.fa-regular.fa-envelope
+										input.form-control(type="text" placeholder="Input Example" aria-label="Example" aria-describedby="addon")
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Input Single Addon Trailing
+								
+								.mb-3
+									.input-group.mb-3
+										input.form-control(type="text" placeholder="Input Example" aria-label="Example" aria-describedby="addon")
+										span.input-group-text
+											i.fa-regular.fa-circle-question.gray-400
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Input Dual Addon
+								
+								.mb-3
+									.input-group.mb-3
+										span.input-group-text
+											i.fa-regular.fa-envelope
+										input.form-control(type="text" placeholder="Input Example" aria-label="Example" aria-describedby="addon")
+										span.input-group-text
+											i.fa-regular.fa-circle-question.gray-400
+
+					hr
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Textarea Single Addon Leading
+								
+								.mb-3
+									.input-group.mb-3
+										span.input-group-text
+											i.fa-regular.fa-envelope
+										textarea.form-control(aria-label="With textarea")
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Textarea Single Addon Trailing
+								
+								.mb-3
+									.input-group.mb-3
+										textarea.form-control(aria-label="With textarea")
+										span.input-group-text
+											i.fa-regular.fa-circle-question.gray-400
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Textarea Dual Addon
+								
+								.mb-3
+									.input-group.mb-3
+										span.input-group-text
+											i.fa-regular.fa-envelope
+										textarea.form-control(aria-label="With textarea")
+										span.input-group-text
+											i.fa-regular.fa-circle-question.gray-400
+
+					hr
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Checkbox Leading
+								
+								.mb-3
+									.input-group.mb-3
+										.input-group-text
+											label.check-contain-sm.mb-3
+												input.m-0(type="checkbox")
+												.check-sm-input
+										input.form-control(type="text" aria-label="Text input with checkbox")
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Checkbox Trailing
+								
+								.mb-3
+									.input-group.mb-3
+										input.form-control(type="text" aria-label="Text input with checkbox")
+										.input-group-text
+											label.check-contain-sm.mb-3
+												input.m-0(type="checkbox")
+												.check-sm-input
+
+					hr
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Radio Leading
+								
+								.mb-3
+									.input-group.mb-3
+										.input-group-text
+											label.check-contain-sm.mb-3
+												input(type="radio" name="radio")
+												.check-sm-input
+										input.form-control(type="text" aria-label="Text input with checkbox")
+
+							.col-4
+
+								//- DEFAULT 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Radio Trailing
+								
+								.mb-3
+									.input-group.mb-3
+										input.form-control(type="text" aria-label="Text input with checkbox")
+										.input-group-text
+											label.check-contain-sm.mb-3
+												input(type="radio" name="radio")
+												.check-sm-input
+
+
+
+
+			//- FLOATING LABELS
+
+			
+			.text-d-sm-medium.mt-3.gray-700 Floating Labels
+
+			.card.mt-4
+
+				//- TYPES
+				
+				.card-header Types
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-4
+
+								//- SMALL 
+
+								.text-md-medium.gray-500.mb-2.mt-3 Input Floating Label
+								
+								form.form-floating.mb-3
+									input.form-control#floatingInput(type="text" placeholder="Here is Placeholder")
+									label(for="floatingInput") Input Floating Label
+
+			//- VALIDATION
+
+			
+			.text-d-sm-medium.mt-3.gray-700 Validation Sample
+
+			.card.mt-4
+
+				//- TYPES
+				
+				.card-header Validation
+
+				.card-body
+
+					.content
+
+						.row
+
+							.col-6
+
+								//- SMALL 
+
+								
+								form.row.g-3.needs-validation(novalidade)
+									.col-4
+										label.form-label(for="validationSample1") First Name
+										input.form-control#validationSample1(type="text" value="John" required)
+										.valid-feedback
+											| Cool!
+									.col-4
+										label.form-label(for="validationSample2") Last Name
+										input.form-control#validationSample2(type="text" value="Oliveira" required)
+										.valid-feedback
+											| Cool!
+									.col-4
+										label.form-label(for="validationSample3") Username
+										.input-group.has-validation
+											span.input-group-text#inputGroupLeading
+												i.fa-regular.fa-at
+											input.form-control#validationSample3(type="text" aria-describedby="inputGroupLeading" required)
+											.invalid-feedback
+												| Please pick a username
+									.col-6
+										label.form-label(for="validationSample4") City
+										input.form-control#validationSample4(type="text" required)
+										.invalid-feedback
+											| Please add a city
+									.col-3
+										label.form-label(for="validationSample5") State
+										select.form-select#validationSample5(type="text" required)
+											option(selected disabled value="") Choose
+											option ...
+										.invalid-feedback
+											| Please select a state
+									.col-3
+										label.form-label(for="validationSample6") Zip Code
+										input.form-control#validationSample6(type="text" required)
+										.invalid-feedback
+											| Please provide a valid zip
+
+									.col-12
+										label.check-contain
+											span Agree to terms and conditions
+											input(type="checkbox" required)
+											.check-input
+										.invalid-feedback
+											| You must agree before submitting
+
+									.col-12
+										button.btn.btn-md.btn-primary(type="submit") Submit Form

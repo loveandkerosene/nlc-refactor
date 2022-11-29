@@ -1,0 +1,187 @@
+.table>:not(caption)>*>*
+	border: none
+
+table.table
+	border-spacing: 0
+
+	tr
+		border: none
+
+		th
+			border-bottom: 1px solid $gray-200 !important
+			vertical-align: middle
+			width: 1px
+
+
+		td
+			padding: 0.75rem 1rem
+			border-bottom: 1px solid $gray-200 !important
+			color: $gray-500
+			font-size: 0.875rem
+			vertical-align: middle
+			// height: 72px
+			width: 1px
+			height: 57px
+			line-height: 1rem
+
+
+			&:hover
+				background-color: $gray-50
+				cursor: pointer
+
+			h1
+				@extend .text-sm-medium
+				color: $gray-900
+				margin-bottom: 0
+
+			p
+				@extend .text-sm-regular
+				margin-bottom: 0
+
+			.has-avatar
+				display: table-cell
+				vertical-align: middle
+				height: fit-content
+
+			.has-avatar-group
+
+				.avatar-container
+					text-align: center
+
+					*
+						display: table-cell
+						vertical-align: middle
+						margin: 0
+			a
+				text-decoration: none
+
+		td.text
+
+			a
+				color: $gray-500 !important
+
+			
+		td.has-actions
+			text-align: center
+			padding: 0 1rem
+
+			&:hover
+				background-color: $white !important
+
+			ul
+				margin: 0
+				padding: 0
+				list-style-type: none
+
+				li
+					display: inline-block
+					width: 34px
+
+					a
+						padding: 0.5rem
+						border-radius: 0.5rem
+						color: $gray-500 !important
+						width: 100%
+						display: inline-block
+						text-align: center
+						font-size: 14px !important
+
+
+						&:hover
+							background-color: $gray-100
+							color: $gray-700 !important
+
+					a.link-danger
+						@extend .link-danger
+
+						&:hover
+							background-color: $danger-500
+							color: $white !important
+
+		th[scope=row]
+			padding: 1rem
+			border-bottom: 1px solid $gray-200 !important
+			color: $gray-500
+			font-size: 0.875rem
+			vertical-align: middle
+			margin: auto
+
+		th[scope=col]
+			@extend .text-xs-medium
+			padding: 0.75rem 1rem
+			background-color: $gray-50
+			border-bottom: 1px solid $gray-200
+			color: $gray-500 !important
+
+			&:hover
+
+				*
+					color: $gray-700 !important
+
+			.check-contain, .check-contain-sm
+				margin-bottom: 0
+
+			a
+				color: $gray-500 !important
+				margin-left: 0.5rem
+
+				&:disabled
+					opacity: 50%
+
+		.disabled
+			background-color: $gray-25
+
+			*
+				opacity: 50%
+
+			&:hover
+				cursor: not-allowed
+				background-color: $gray-25
+
+		td.lead-text
+			color: $gray-900
+			font-weight: 500
+
+		td.feature-icon
+
+			.feat-icon
+				float: left
+				margin-right: 1rem
+
+		td.rating-starts
+
+			a i
+				color: $gray-300
+				font-size: 1rem
+				margin-right: 0.25rem
+
+			a.active
+
+				i
+					color: $warning-400
+
+	tr:last-child
+
+		td:first-child
+			border-radius: 0 0 0 0.75rem
+
+		td:last-child
+			border-radius: 0 0 0.75rem 0
+
+
+
+
+		// td.lead-checkbox
+		// 	@extend .d-flex
+		// 	@extend .flex-row
+		// 	@extend .justify-content-start
+		// 	@extend .align-items-center
+
+
+				
+
+		label.check-contain
+			margin: 0 1rem 0 0
+			height: fit-content
+			min-height: 20px
+			min-width: 20px

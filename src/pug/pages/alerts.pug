@@ -1,0 +1,90 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#alerts.p-3.mb-4
+
+		.container
+
+			.text-d-md-semibold.black Alerts
+
+			.text-d-xs-medium.mt-3.gray-700 Alert Types
+
+			.text-md-medium.gray-500.mb-2.mt-3 Primary
+
+			.row.mt-4
+				.col
+					.alert.alert-primary
+						i.alert-icon.fa-regular.fa-smile
+						.content.flex-fill
+							.title We’ve just released a new feature
+							.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis gravida augue, eu consectetur tortor aliquam eget. 
+							.actions
+								a.link-primary(href="#") Learn More
+								a.link-primary.trail-icon(href="#")
+									| View Changes
+									i.fa-regular.fa-arrow-right
+						i.alert-icon.fa-regular.fa-close
+
+			.text-md-medium.gray-500.mb-2.mt-3 Gray
+
+			.row.mt-4
+				.col
+					.alert.alert-gray
+						i.alert-icon.fa-regular.fa-circle-exclamation
+						.content.flex-fill
+							.title We’ve just released a new feature
+							.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis gravida augue, eu consectetur tortor aliquam eget. 
+							.actions
+								a.link-gray(href="#") Learn More
+								a.link-primary.trail-icon(href="#")
+									| View Changes
+									i.fa-regular.fa-arrow-right
+						i.alert-icon.fa-regular.fa-close
+
+			.text-md-medium.gray-500.mb-2.mt-3 Danger
+
+			.row.mt-4
+				.col
+					.alert.alert-danger
+						i.alert-icon.fa-regular.fa-circle-exclamation
+						.content.flex-fill
+							.title We’ve just released a new feature
+							.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis gravida augue, eu consectetur tortor aliquam eget. 
+							.actions
+								a.link-danger(href="#") Learn More
+								a.link-danger.trail-icon(href="#")
+									| View Changes
+									i.fa-regular.fa-arrow-right
+						i.alert-icon.fa-regular.fa-close
+
+			.text-md-medium.gray-500.mb-2.mt-3 Warning
+
+			.row.mt-4
+				.col
+					.alert.alert-warning
+						i.alert-icon.fa-regular.fa-circle-exclamation
+						.content.flex-fill
+							.title We’ve just released a new feature
+							.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis gravida augue, eu consectetur tortor aliquam eget. 
+							.actions
+								a.link-warning(href="#") Learn More
+								a.link-warning.trail-icon(href="#")
+									| View Changes
+									i.fa-regular.fa-arrow-right
+						i.alert-icon.fa-regular.fa-close
+
+			.text-md-medium.gray-500.mb-2.mt-3 Success
+
+			.row.mt-4
+				.col
+					.alert.alert-success
+						i.alert-icon.fa-regular.fa-circle-exclamation
+						.content.flex-fill
+							.title We’ve just released a new feature
+							.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sagittis gravida augue, eu consectetur tortor aliquam eget. 
+							.actions
+								a.link-success(href="#") Learn More
+								a.link-success.trail-icon(href="#")
+									| View Changes
+									i.fa-regular.fa-arrow-right
+						i.alert-icon.fa-regular.fa-close

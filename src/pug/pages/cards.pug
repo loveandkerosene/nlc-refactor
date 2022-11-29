@@ -1,0 +1,99 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#alerts.p-3.mb-4
+
+		.container
+
+			.text-d-md-semibold.black Cards
+
+			.text-d-xs-medium.mt-3.gray-700 Card Types
+
+
+			.row.mt-4
+				.col-6
+					.text-md-medium.gray-500.mb-2.mt-3 Default
+					
+					.card 
+						.card-header 
+							.title.flex-fill
+								i.fa-regular.fa-smile 
+								| Widget Default
+							.actions
+								.btn.btn-sm.btn-secondary-gray Action
+								.btn.btn-sm.btn-primary Action
+						.card-body
+							.content
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus felis, tincidunt at purus nec, dapibus ullamcorper sapien. Sed faucibus eu lorem non sodales. Sed gravida vehicula porttitor.
+						.card-footer.d-flex.flex-row.justify-content-between.align-items-center
+
+							div(aria-label="Test Pagination")
+								ul.pagination.pagination-sm.justify-content-center
+									li.page-item
+										a.page-link(href="#" aria-label="Previous")
+											span(aria-hidden="true")
+												i.fa-regular.fa-chevron-left
+									li.page-item
+										a.page-link(href="#") 1
+									li.page-item
+										a.page-link(href="#") 2
+									li.page-item
+										a.page-link(href="#") 3
+									li.page-item
+										a.page-link(href="#" aria-label="Next")
+											span(aria-hidden="true")
+												i.fa-regular.fa-chevron-right
+							.items-shown
+								.d-inline-block.me-3 1-25 of 435
+								
+								.d-inline-block
+									select.form-select.form-select-sm(aria-label="Default select example")
+										option(selected) Show
+										option(value="1") 10
+										option(value="2") 25
+										option(value="3") 50
+										option(value="4") 100
+										option(value="5") All
+
+				.col-6
+					.text-md-medium.gray-500.mb-2.mt-3 Widget Table
+					.card 
+						.card-header 
+							.title.flex-fill
+								i.fa-regular.fa-smile 
+								| Widget Table
+							.actions
+								.btn.btn-sm.btn-secondary-gray Action
+								.btn.btn-sm.btn-primary Action
+						.card-body
+							.content
+								| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus felis, tincidunt at purus nec, dapibus ullamcorper sapien. Sed faucibus eu lorem non sodales. Sed gravida vehicula porttitor.
+						.card-footer.d-flex.flex-row.justify-content-between.align-items-center
+
+							div(aria-label="Test Pagination")
+								ul.pagination.pagination-sm.justify-content-center
+									li.page-item
+										a.page-link(href="#" aria-label="Previous")
+											span(aria-hidden="true")
+												i.fa-regular.fa-chevron-left
+									li.page-item
+										a.page-link(href="#") 1
+									li.page-item
+										a.page-link(href="#") 2
+									li.page-item
+										a.page-link(href="#") 3
+									li.page-item
+										a.page-link(href="#" aria-label="Next")
+											span(aria-hidden="true")
+												i.fa-regular.fa-chevron-right
+							.items-shown
+								.d-inline-block.me-3 1-25 of 435
+								
+								.d-inline-block
+									select.form-select.form-select-sm(aria-label="Default select example")
+										option(selected) Show
+										option(value="1") 10
+										option(value="2") 25
+										option(value="3") 50
+										option(value="4") 100
+										option(value="5") All

@@ -1,0 +1,33 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#alerts.p-3.mb-4
+
+		.container
+
+			.row
+
+				.col-6
+
+					.text-d-md-semibold.black Badges
+
+					.card.mt-4
+
+						//- INPUT SIZES
+						
+						.card-header
+							.title Request Status
+
+						.card-body
+
+							.content
+
+								.badge-status.revision Being Revised
+								.badge-status.inprogress In Progress
+								.badge-status.processing Processing
+								.badge-status.assigning Being Assigned
+								.badge-status.reply Awaiting Reply
+								.mt-3
+									.badge-status.onhold On Hold
+									.badge-status.review Ready for Review
+									.badge-status.completed Completed

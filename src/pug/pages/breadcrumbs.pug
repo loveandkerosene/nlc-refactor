@@ -1,0 +1,66 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#alerts.p-3.mb-4
+
+		.container
+
+			.text-d-md-semibold.black Breadcrumbs
+			.row
+
+				.col-6
+
+
+					.card.mt-4
+
+						//- INPUT SIZES
+						
+						.card-header
+							.title Example
+
+						.card-body
+							.content
+
+								.row
+
+									.col
+
+										.mb-3
+											| We use the 
+											b .progress 
+											| as a wrapper to indicate the max value of the progress bar.
+											| .
+								
+										nav(aria-label='breadcrumb').mb-3
+											ol.breadcrumbs
+												li.breadcrumbs-item.active(aria-current='page')
+													i.fa-regular.fa-house-chimney-blank
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-slash-forward
+												li.breadcrumbs-item
+													| Organization
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-slash-forward
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-ellipsis
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-slash-forward
+												li.breadcrumbs-item.div-slash
+													a Request List
+
+										nav(aria-label='breadcrumb')
+											ol.breadcrumbs
+												li.breadcrumbs-item.active(aria-current='page')
+													i.fa-regular.fa-house-chimney-blank
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-chevron-right
+												li.breadcrumbs-item
+													| Organization
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-chevron-right
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-ellipsis
+												li.breadcrumbs-item.div-slash
+													i.fa-regular.fa-chevron-right
+												li.breadcrumbs-item.div-slash
+													a Request List

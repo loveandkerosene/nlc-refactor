@@ -1,0 +1,345 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row.mt-4
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#")  Accounts
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									| Account Name
+						.header-content
+							.page-title 
+								i.fa-light.fa-cabinet-filing
+								.d-flex.flex-column 
+									| Account Name
+									.text-sm-regular.gray-500 Business - 4x Graphic - $1.596 (Monthly)
+							.actions
+								.account-owner-panel
+									.avatar-label-group
+										.avatar
+											.avatar-container
+										.avatar-label-group-container
+											span.title John Oliveira
+											span.subtitle john@nlc.com
+									.btn.btn-sm.btn-primary(data-bs-toggle="tooltip" data-bs-title="Impersonate account owner")
+										i.fa-regular.fa-masks-theater.me-2
+										| Impersonate
+
+						.header-options
+							ul.tab-menu
+								li.tab-item.active
+									a(href="#") 
+										| Overview
+								li.tab-item
+									a(href="#") 
+										| Settings
+								li.tab-item
+									a(href="#") 
+										| Brands
+								li.tab-item
+									a(href="#") 
+										| Users
+								li.tab-item
+									a(href="#") 
+										| Internal Notes
+								li.tab-item
+									a(href="#") 
+										| Marketplace Purchases
+								li.tab-item
+									a(href="#") 
+										| Activity Log
+					.card-body
+						.contents(style="height: auto")
+							h5.text-center Feedback Summary
+							.feedback-summary
+								.feedback-good
+									.feedback-container
+										h1 19
+										.feedback-label
+											| GOOD
+									.feedback-explanation Curabitur sagittis feugiat ante
+								.feedback-neutral
+									.feedback-container
+										h1 19
+										.feedback-label
+											| NEUTRAL
+									.feedback-explanation Curabitur sagittis feugiat ante
+								.feedback-poor
+									.feedback-container
+										h1 19
+										.feedback-label
+											| POOR
+									.feedback-explanation Curabitur sagittis feugiat ante
+								.feedback-overral
+									.feedback-container
+										.text-center
+											h1.success-600
+												| 83
+												small %
+										.feedback-explanation
+											h6 Overral
+											.mb-1 Curabitur sagittis feugiat ante 
+											.progress
+												.progress-bar.success-500-bg(role='progressbar' aria-label='Basic example' style='width: 83%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+						.card-table
+
+							table.table
+								thead
+									tr
+										th(scope='col' style="width: 45%")
+											span Name
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th(scope='col' style="width: 15%")
+											span Designer
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th.text-center(scope='col')
+											span Completed
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th.text-center(scope='col' style="width: 10%")
+											span Rating
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th.text-center(scope='col' style="width: 10%")
+											span Date Created
+											a(href="#")
+												i.fa-regular.fa-circle-question
+											a(href="#")
+												i.fa-regular.fa-arrow-down
+										th(scope='col' style="width: 10%")
+
+								tbody
+									tr
+										td.lead-text JRC 7x Listing Images - Aluminum Bar End Plugs - Part 2/2 (x4 Graphics)
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+										td.text-center
+											.text-lg-medium
+												i.fa-regular.fa-circle-check.success-500
+										td.rating-starts.text-center
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can
+									tr
+										td.lead-text Nutritional Fact Black and White
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+										td.text-center
+											.text-lg-medium
+												
+										td.rating-starts.text-center
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can
+									tr
+										td.lead-text BQ: Card Payment Machine Performance Max Campaign
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+										td.text-center
+											.text-lg-medium
+												i.fa-regular.fa-circle-check.success-500
+										td.rating-starts.text-center
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can
+									tr
+										td.lead-text Reen B31 opt2 x 1 video - Graphic
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+										td.text-center
+											.text-lg-medium
+												i.fa-regular.fa-circle-check.success-500
+										td.rating-starts.text-center
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can
+									tr
+										td.lead-text DK MBA - 22-day Plan Iterations - JUL22
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+										td.text-center
+											.text-lg-medium
+												i.fa-regular.fa-circle-check.success-500
+										td.rating-starts.text-center
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a.active(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can
+									tr
+										td.lead-text eAdvisor- Case Study Retargeting Campaign
+										td
+											.avatar-label-group
+												.avatar
+													.avatar-container
+												.avatar-label-group-container
+													span.title John Oliveira
+													span.subtitle john@nlc.com
+										td.text-center
+											.text-lg-medium
+
+										td.rating-starts.text-center
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+											a(href="#")
+												i.fa-solid.fa-star
+										td.text-center Nov. 17th, 2022
+										td.has-actions
+											ul
+												li
+													a(href="#")
+														i.fa-regular.fa-copy
+												li
+													a(href="#")
+														i.fa-regular.fa-link
+												li
+													a.link-danger(href="#")
+														i.fa-regular.fa-trash-can

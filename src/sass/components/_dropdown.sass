@@ -1,0 +1,112 @@
+.dropdown-menu
+	border: 1px solid $gray-100
+	@include shadow-lg
+	overflow: visible
+	border-radius: 0.5rem
+	margin-top: 0.5rem !important
+
+	a
+		color: $gray-700 !important
+		font-weight: 500 !important
+		padding: 0.625rem 1rem
+
+		&:hover
+			color: $gray-900 !important
+			background-color: $gray-100
+
+	a.active
+		background-color: $primary-400 !important
+		color: $white !important
+
+		&:hover
+			background-color: $primary-500 !important
+
+	a.disabled
+		color: $gray-200 !important
+		cursor: not-allowed !important
+
+		&:hover
+			background: none !important	
+			cursor: not-allowed !important
+
+	.dropdown-header
+		color: $gray-900 !important
+		font-weight: 600 !important
+		padding: 0.625rem 1rem 0.875rem 1rem
+		border-bottom: 1px solid $gray-100
+		cursor: auto
+
+	.dropdown-divider
+		border-color: $gray-100
+
+	p
+		white-space: pre-wrap
+		font-weight: 400
+
+.btn.dropdown-toggle
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-start
+	@extend .align-items-center
+	gap: 0.5rem
+
+.btn.btn-secondary-color.dropdown-toggle
+
+	&:focus
+			box-shadow: none !important
+
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn-group:not(:last-child)>.btn
+	border-top-right-radius: 0 !important
+	border-bottom-right-radius: 0 !important	
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-start
+	@extend .align-items-center
+	z-index: 0
+
+	&:focus
+		outline: transparent !important
+		box-shadow: transparent !important
+
+.btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn, .btn-group>.btn-group:not(:first-child)>.btn
+	border-top-left-radius: 0 !important
+	border-bottom-left-radius: 0 !important
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-start
+	@extend .align-items-center
+	z-index: 10
+
+	&:focus
+		outline: transparent !important
+		box-shadow: transparent !important
+
+.dropdown-item
+	color: $gray-700 !important
+	font-weight: 500 !important
+	padding: 0.625rem 1rem
+
+	&:hover
+		color: $gray-900 !important
+		background-color: $gray-100
+
+.dropdown-item.disabled
+	
+	a
+		color: $gray-400 !important
+
+.dropdown-menu-dark
+	background-color: $gray-700 !important
+	border-color: $gray-800 !important
+
+	a.dropdown-item
+		color: $white !important
+
+		&:hover
+			background-color: $gray-600
+
+	a.active
+		background-color: $primary-400 !important
+
+		&:hover
+			background-color: $primary-500  !important

@@ -1,0 +1,83 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	.contents.overflow-hidden
+
+		//- CARD
+		
+		.row
+			.col-12
+				.card
+					.page-header
+						nav(aria-label='breadcrumb')
+							ol.breadcrumbs
+								li.breadcrumbs-item.active(aria-current='page')
+									i.fa-regular.fa-house-chimney-blank
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item
+									a(href="#") User Name
+								li.breadcrumbs-item.div-slash
+									i.fa-regular.fa-slash-forward
+								li.breadcrumbs-item.div-slash
+									| Settings
+						.header-content
+							.page-title 
+								i.fa-light.fa-gear
+								| Global Settings
+					.card-body
+						.content
+							
+							.row
+								.col
+									.banner.banner-primary
+										.content
+											.feat-icon
+												.feat-icon-circle
+													i.fa-regular.fa-zap
+											h6
+												| Stay up to date with the latest news and updates
+												small.d-block
+													| Lorem ipsum dolor sit amet consectuer adipiscing elit.
+										.content
+											.input-group
+												span.input-group-text
+													i.fa-regular.fa-envelope
+												input.form-control(type="text" placeholder="Enter your email" aria-label="Example" aria-describedby="addon")
+											button.btn.btn-primary.lead-icon
+												i.fa-regular.fa-newspaper
+												| Subscribe
+											a.link-primary.close-banner(href="#")
+												i.fa-regular.fa-close
+
+							.row.mt-4
+								.col
+									.banner.banner-gray
+										.content
+											.feat-icon
+												.feat-icon-circle
+													i.fa-regular.fa-zap
+											h6
+												| Stay up to date with the latest news and updates
+												small.d-block
+													| Lorem ipsum dolor sit amet consectuer adipiscing elit.
+										.content
+											.input-group
+												span.input-group-text
+													i.fa-regular.fa-envelope
+												input.form-control(type="text" placeholder="Enter your email" aria-label="Example" aria-describedby="addon")
+											button.btn.btn-secondary-gray.lead-icon
+												i.fa-regular.fa-newspaper
+												| Subscribe
+											a.link-gray.close-banner(href="#")
+												i.fa-regular.fa-close
+
+							.row.mt-4
+								.col
+									.banner.banner-gray
+										.content.mx-auto
+											strong Stay up to date with the latest news and updates.
+											| Lorem ipsum dolor sit amet consectuer adipiscing elit.
+										.content
+											a.link-gray.close-banner(href="#")
+												i.fa-regular.fa-close

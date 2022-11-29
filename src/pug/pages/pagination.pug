@@ -1,0 +1,252 @@
+extends ./../layouts/default-layout.pug
+block content
+
+	section#alerts.p-3.mb-4
+
+		.container
+
+			.text-d-md-semibold.black Pagination
+			.row
+
+				.col-6
+
+
+					.card.mt-4
+
+						//- INPUT SIZES
+						
+						.card-header
+							.title Sizes
+
+						.card-body
+							.content
+
+								.row
+
+									.col
+
+										.mb-3
+											| We use the 
+											b .progress 
+											| as a wrapper to indicate the max value of the progress bar.
+											| .
+								
+										nav(aria-label='Page navigation example')
+											ul.pagination.pagination-sm
+												li.page-item.disabled
+													a.page-link(href='#') Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+
+										nav.mt-3(aria-label='Page navigation example')
+											ul.pagination
+												li.page-item.disabled
+													a.page-link(href='#') Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+
+										nav.mt-3(aria-label='Page navigation example')
+											ul.pagination.pagination-lg
+												li.page-item.disabled
+													a.page-link(href='#') Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+
+				.col-6
+
+
+					.card.mt-4
+
+						//- INPUT SIZES
+						
+						.card-header
+							.title Sizes
+
+						.card-body
+							.content
+
+								.row
+
+									.col
+
+										.mb-3
+											| We use the 
+											b .progress 
+											| as a wrapper to indicate the max value of the progress bar.
+											| .
+								
+										nav(aria-label='Page navigation example')
+											ul.pagination.pagination-sm
+												li.page-item.disabled
+													a.page-link(href='#') 
+														i.fa-regular.fa-chevron-left
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#')
+														i.fa-regular.fa-chevron-right
+
+										nav.mt-3(aria-label='Page navigation example')
+											ul.pagination
+												li.page-item.disabled
+													a.page-link(href='#') 
+														i.fa-regular.fa-chevron-left
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#')
+														i.fa-regular.fa-chevron-right
+
+										nav.mt-3(aria-label='Page navigation example')
+											ul.pagination.pagination-lg
+												li.page-item.disabled
+													a.page-link(href='#') 
+														i.fa-regular.fa-chevron-left
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#')
+														i.fa-regular.fa-chevron-right
+
+				.col-6
+
+
+					.card.mt-4
+
+						//- INPUT SIZES
+						
+						.card-header
+							.title 
+								| Disabled & Active States
+
+						.card-body
+							.content
+
+								.row
+
+									.col
+
+										.mb-3
+											| Pagination links are customizable for different circumstances. Use 
+											b .disabled 
+											| for links that appear un-clickable and 
+											b .active 
+											| to indicate the current page.
+											| These can be used on the 
+											b .li 
+											| items on the list.
+								
+										nav(aria-label='...')
+											ul.pagination
+												li.page-item.disabled
+													a.page-link Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item.active(aria-current='page')
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+
+
+				.col-6
+
+
+					.card.mt-4
+
+						//- INPUT SIZES
+						
+						.card-header
+							.title 
+								| Alignment
+
+						.card-body
+							.content
+
+								.row
+
+									.col
+
+										.mb-3
+											| Pagination links are customizable for different circumstances. Use 
+											b .disabled 
+											| for links that appear un-clickable and 
+											b .active 
+											| to indicate the current page.
+											| These can be used on the 
+											b .li 
+											| items on the list.
+								
+										nav(aria-label='Page navigation example')
+											ul.pagination.justify-content-center
+												li.page-item.disabled
+													a.page-link Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+											.text-center Centered
+
+										nav(aria-label='Page navigation example')
+											ul.pagination.justify-content-start
+												li.page-item.disabled
+													a.page-link Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+											.text-left Start
+
+										nav(aria-label='Page navigation example')
+											ul.pagination.justify-content-end
+												li.page-item.disabled
+													a.page-link Previous
+												li.page-item
+													a.page-link(href='#') 1
+												li.page-item
+													a.page-link(href='#') 2
+												li.page-item
+													a.page-link(href='#') 3
+												li.page-item
+													a.page-link(href='#') Next
+											.text-end End
+

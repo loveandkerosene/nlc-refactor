@@ -1,0 +1,141 @@
+
+.empty-state
+	@extend .d-flex
+	@extend .flex-column
+	@extend .justify-content-between
+	@extend .align-items-center
+	padding: 1.5rem
+	position: relative
+	gap: 1.5rem
+	max-width: 400px
+	margin: 0 auto
+	text-align: center
+
+	.content
+		@extend .d-flex
+		@extend .flex-column
+		@extend .justify-content-start
+		@extend .align-items-center
+		gap: 1rem
+		padding: 0 !important
+
+		h5
+			margin-bottom: 0
+			font-weight: 600
+
+
+			small
+				font-size: 14px
+				font-weight: 400
+	.actions
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-between
+		@extend .align-items-center
+		gap: 1rem
+
+.empty-state.empty-state-h
+	display: block
+	padding: 0
+	position: relative
+	width: 100% 
+	max-width: 100%
+	margin: 0
+	text-align: left
+
+	.container-empty-state
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-start
+		@extend .align-items-center
+		gap: 1.5rem
+		width: 100% 
+
+
+	.content
+		@extend .d-flex
+		@extend .flex-column
+		@extend .justify-content-center
+		@extend .align-items-start
+		gap: 0.5rem
+
+		span
+			text-align: left
+
+		h5
+			text-align: left
+
+	.empty-state-footer
+		display: block
+
+	.actions
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-start
+		@extend .align-items-center
+		gap: 1rem
+
+@media (max-width: 1280px)
+	
+	.empty-state
+		flex-direction: column !important
+		gap: 1rem
+
+		.content
+			width: 100%
+			flex-direction: row !important
+
+			.close-empty-state
+				position: absolute
+				top: 0.875rem
+				right: 1rem
+
+@media (max-width: 768px)
+	
+	.empty-state
+		flex-direction: column !important
+		gap: 1rem
+
+		.content
+			width: 100%
+			flex-direction: column !important
+			text-align: center
+
+			.btn
+				width: 100% !important
+
+.empty-state.state-primary
+
+	.feat-icon-circle
+		@extend .feat-icon-primary
+
+	h5, span 
+		color: $primary-700
+		word-wrap: wrap
+
+		small
+			color: $primary-600
+
+.empty-state.state-gray
+
+	.feat-icon-circle
+		@extend .feat-icon-gray
+
+	h5, span 
+		color: $gray-700
+		word-wrap: wrap
+
+		small
+			color: $gray-600
+
+.empty-state.state-danger
+
+	.feat-icon-circle
+		@extend .feat-icon-danger
+
+	h5, span
+		color: $danger-700
+		word-wrap: wrap
+
+		small
+			color: $danger-600

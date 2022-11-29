@@ -1,0 +1,71 @@
+//---------- STATUS ----------//
+
+.badge-status
+	padding: 2px 10px !important
+	border-radius: 0.25rem !important
+	display: inline-block
+	width: 100%
+	text-align: center
+	@extend .text-sm-medium
+
+.badge-status.revision
+	background-color: $pink-500 !important
+	color: white !important
+
+.badge-status.inprogress
+	background-color: $blue-light-500 !important
+	color: white !important
+
+.badge-status.processing
+	background-color: $blue-gray-500 !important
+	color: white !important
+
+.badge-status.assigning
+	background-color: $gray-500 !important
+	color: white !important
+
+.badge-status.reply
+	background-color: $orange-500 !important
+	color: white !important
+
+.badge-status.onhold
+	background-color: $danger-500 !important
+	color: white !important
+
+.badge-status.completed
+	background-color: $success-500 !important
+	color: white !important
+
+.badge-status.review
+	background-color: $warning-500 !important
+	color: white !important
+
+//---------- GENERAL ----------//
+
+.badge
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-between
+	@extend .align-items-center
+	border-radius: 3px
+
+.badge-sm
+	padding: 4px 10px
+	line-height: 0.75rem
+	font-size: 0.75rem
+
+.badge-primary
+	background-color: $primary-100
+	color: $primary-500
+
+	&:hover
+		background-color: $primary-200
+		color: $primary-600
+
+.badge-gray
+	background-color: $gray-100
+	color: $gray-500
+
+	&:hover
+		background-color: $gray-200
+		color: $gray-600
