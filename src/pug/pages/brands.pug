@@ -1,524 +1,793 @@
 extends ./../layouts/default-layout.pug
 block content
 
-	.contents.overflow-hidden
-
-		//- CARD
+	.portal
 		
-		.row
-			.col-12
-				.card
-					.page-header
-						nav(aria-label='breadcrumb')
-							ol.breadcrumbs
-								li.breadcrumbs-item.active(aria-current='page')
-									i.fa-regular.fa-house-chimney-blank
-								li.breadcrumbs-item.div-slash
-									i.fa-regular.fa-slash-forward
-								li.breadcrumbs-item.div-slash
-									| Brands
-						.header-content
-							.page-title 
-								i.fa-light.fa-medal
-								| Brands List
-							.actions
-								.btn.btn-primary(data-bs-title="Create a new brand" data-bs-toggle='modal' data-bs-target='#createBrand')
-									i.fa-regular.fa-plus.me-2
-									| Create New
-					.card-body.p-0
-						.contents(style="height: 690px; padding: 0 !important")
-							.card-table
+		//- SIDEBAR
+		
+		nav.sidebar
 
-								table.table
-									thead.sticky-top(style="z-index: 1")
-										tr
-											th(scope='col' style="width: 28%")
-												span Brand Name
-												a(href="#")
-													i.fa-regular.fa-circle-question
-												a(href="#")
-													i.fa-regular.fa-arrow-down
-											th(scope='col' style="width: 15%")
-												span Account
-												a(href="#")
-													i.fa-regular.fa-circle-question
-												a(href="#")
-													i.fa-regular.fa-arrow-down
-											th(scope='col' style="width: 15%")
-												span Industry
-												a(href="#")
-													i.fa-regular.fa-circle-question
-												a(href="#")
-													i.fa-regular.fa-arrow-down
-											th.text-center(scope='col' style="width: 10%")
-												span Website
-												a(href="#")
-													i.fa-regular.fa-circle-question
-												a(href="#")
-													i.fa-regular.fa-arrow-down
-											th.text-center(scope='col' style="width: 10%")
-												span Date Created
-												a(href="#")
-													i.fa-regular.fa-circle-question
-												a(href="#")
-													i.fa-regular.fa-arrow-down
-											th(scope='col' style="width: 10%")
+			.nav-container
+				a.brand
+					img(src="/assets/images/brand.png")
+				.top-menu
+					.impersonation-panel
+						.avatar-label-group
+							.avatar
+								.avatar-container
+								.online-indicator-on
+							.avatar-label-group-container
+								span.title John Oliveira
+								span.subtitle john@nlc.com
+						.tag.tag-danger
+							.tag-content 
+								i.fa-regular.fa-masks-theater
+								| Impersonating
+								i.fa-regular.fa-close.gray-600
 
-									tbody
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+					ul
+						li
+							a.menu-item(href="dashboard.html") 
+								.link-content
+									i.fa-regular.fa-grid-2
+									div Dashboard
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-bell
+									div Notifications
+								.badge 10
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-building
+									div Organizations
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-bars-progress
+									div Requests
+								.badge 10
+						li
+							a.menu-item.active(href="brands.html") 
+								.link-content
+									i.fa-regular.fa-medal
+									div Brands
+						li
+							a.menu-item(href="users.html") 
+								.link-content
+									i.fa-regular.fa-user
+									div Users
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-users
+									div Teams
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-cabinet-filing
+									div Accounts
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-file-chart-column
+									div Reports
+						li
+							a.menu-item(href="#") 
+								.link-content
+									i.fa-regular.fa-lightbulb-cfl-on
+									div Inspiration
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+			.nav-container.bottom-container
+				ul
+					li
+						a.menu-item(href="#") 
+							.link-content
+								i.fa-regular.fa-credit-card
+								div Billing
+					li
+						a.menu-item(href="#") 
+							.link-content
+								i.fa-regular.fa-toolbox
+								div Tools
+					li
+						a.menu-item(href="#") 
+							.link-content
+								i.fa-regular.fa-life-ring
+								div Support
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+		section.portal-contents
+			include ../partials/header.pug						
+			.section-contents.position-relative
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+				//- OFF-CANVAS OPEN
+	
+				#offcanvasExample.offcanvas.offcanvas-end.position-absolute(tabindex='-1' aria-labelledby='offcanvasExampleLabel' data-bs-scroll="true")
+					
+					.offcanvas-header
+						.header-content-left
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+							a.offcanvas-close(href="" data-bs-dismiss='offcanvas')
+								i.fa-regular.fa-close
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+							.title 
+								.avatar.me-3(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+									.avatar-container
+								.d-flex.flex-column
+									h1 Coca-Cola
+									.text-xs-regular.primary-500 Coca-Cola Inc.
+						.actions
+							.btn.btn-tertiary-gray(data-bs-toggle="tooltip" data-bs-title="Copy link to profile")
+								i.fa-regular.fa-link
+							.btn.btn-secondary-color(data-bs-toggle="tooltip" data-bs-title="Check onboarding information")
+								i.fa-regular.fa-user-tag.me-2
+								| Onboarding
+							.btn.btn-primary(data-bs-toggle="tooltip" data-bs-title="Save changes")
+								i.fa-regular.fa-floppy-disk.me-2
+								| Save	
+					.header-options
+						ul.tab-menu
+							li.tab-item.active
+								a(href="#overview") 
+									| Overview
+							li.tab-item
+								a(href="#notes") 
+									| Internal Notes
+							li.tab-item
+								a(href="#") 
+									| Best Designs
+							li.tab-item
+								a(href="#") 
+									| Files
+							li.tab-item
+								a(href="#") 
+									| Designers
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+					.offcanvas-body
+						#overview
+							.row
+								.col
+									label.form-label(for="ControlInput1") Brand Name
+									.input-group
+										span.input-group-text
+											i.fa-regular.fa-medal
+										input.form-control(type="text" value="Coca-Cola" aria-label="Example" aria-describedby="addon")
+								.col
+									label.form-label(for="ControlInput1") Account
+									.input-group
+										span.input-group-text
+											i.fa-regular.fa-cabinet-filing
+										select.form-select.form-select-sm(aria-label="Select an account")
+											option() Select an account
+											option(selected) Coca-Cola Inc.
+											option(value="2") NLC
+											option(value="3") Peugeot
+											option(value="4") Google
+											option(value="5") Microsoft
+							.row.mt-4
+								.col
+									label.form-label(for="ControlInput1") Industry
+									.input-group
+										span.input-group-text
+											i.fa-regular.fa-industry
+										input.form-control(type="text" placeholder="Enter brand's industry" Value="Beverages" aria-label="Example" aria-describedby="addon")
+								.col
+									label.form-label(for="ControlInput1") Website
+									.input-group
+										span.input-group-text
+											i.fa-regular.fa-globe
+										input.form-control(type="text" placeholder="Brand's website" value="www.coca-cola.com" aria-label="Example" aria-describedby="addon")
+							.row.mt-3
+								.col
+									.position-relative
+										label.form-label(for="ControlInput1") Audience
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-square-user
+											input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
+										.position-absolute(style="top: 2.05rem; left: 3rem")
+											.tag
+												.tag-content 
+													| Men & Women
+													i.fa-regular.fa-close
+											.tag
+												.tag-content 
+													| 14-80
+													i.fa-regular.fa-close
+											.tag
+												.tag-content 
+													| Cool Peeps
+													i.fa-regular.fa-close
+											.tag
+												.tag-content 
+													| John
+													i.fa-regular.fa-close
+							.row.mt-3
+								.col
+									.position-relative
+										label.form-label(for="ControlInput1") Colors
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-droplet
+											input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
+										.position-absolute(style="top: 2.05rem; left: 3rem")
+											.tag
+												.tag-content 
+													i.fa-solid.fa-circle-small(style="color: #fe001a")
+													span(style="color: #fe001a") #fe001a
+													i.fa-regular.fa-close
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+							.row.mt-3
+								.col
+									.position-relative
+										label.form-label(for="ControlInput1") Fonts
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-book-font
+											input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
+										.position-absolute(style="top: 2.05rem; left: 3rem")
+											.tag
+												.tag-content 
+													| Google Inter
+													i.fa-regular.fa-close
+											.tag
+												.tag-content 
+													| Google Open Sans
+													i.fa-regular.fa-close
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+							.row.mt-3
+								.col
+									label.form-label(for="ControlInput1") Description
+									.input-group.mb-3
+										span.input-group-text
+											i.fa-regular.fa-file-lines
+										textarea.form-control(aria-label="With textarea" rows="5")
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+				.container-fluid.p-4.h-100
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
-										tr
-											td
-												.avatar-label-group
-													.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
-														.avatar-container
-													.avatar-label-group-container
-														span.title Coca-Cola
-											td.text
-												| Coca-Cola Inc.
-											td.text
-												| Beverages
-											td.text-center
-												| www.coca-cola.com
-											td.text-center Nov. 17th, 2022
-											td.has-actions
-												ul
-													li
-														a(href="#")
-															i.fa-regular.fa-link
+					//- CARD
+					
+					.card
+						.page-header
+							nav(aria-label='breadcrumb')
+								ol.breadcrumbs
+									li.breadcrumbs-item.active(aria-current='page')
+										i.fa-regular.fa-house-chimney-blank
+									li.breadcrumbs-item.div-slash
+										i.fa-regular.fa-slash-forward
+									li.breadcrumbs-item.div-slash
+										| Brands
+							.header-content
+								.page-title 
+									i.fa-light.fa-medal
+									| Brands List
+								.actions
+									.btn.btn-primary(data-bs-title="Create a new brand" data-bs-toggle='modal' data-bs-target='#createBrand')
+										i.fa-regular.fa-plus.me-2
+										| Create New
+						.card-body.p-0
+							.contents(style="height: 690px; padding: 0 !important")
+								.card-table
 
-													li
-														a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
-															i.fa-regular.fa-trash-can
+									table.table
+										thead.sticky-top(style="z-index: 1")
+											tr
+												th(scope='col' style="width: 28%")
+													span Brand Name
+													a(href="#")
+														i.fa-regular.fa-circle-question
+													a(href="#")
+														i.fa-regular.fa-arrow-down
+												th(scope='col' style="width: 15%")
+													span Account
+													a(href="#")
+														i.fa-regular.fa-circle-question
+													a(href="#")
+														i.fa-regular.fa-arrow-down
+												th(scope='col' style="width: 15%")
+													span Industry
+													a(href="#")
+														i.fa-regular.fa-circle-question
+													a(href="#")
+														i.fa-regular.fa-arrow-down
+												th.text-center(scope='col' style="width: 10%")
+													span Website
+													a(href="#")
+														i.fa-regular.fa-circle-question
+													a(href="#")
+														i.fa-regular.fa-arrow-down
+												th.text-center(scope='col' style="width: 10%")
+													span Date Created
+													a(href="#")
+														i.fa-regular.fa-circle-question
+													a(href="#")
+														i.fa-regular.fa-arrow-down
+												th(scope='col' style="width: 10%")
 
-		//- MODAL
+										tbody
+											tr
+												td
+													a(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample')
+														.avatar-label-group
+															.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+																.avatar-container
+															.avatar-label-group-container
+																span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
 
-		#confirmDelete.modal.modal-sm.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
-			.modal-dialog.modal-dialog-centered
-				.modal-content
-					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-					.modal-body
-						.text-center
-							.feat-icon
-								.feat-icon-circle.feat-icon-lg.feat-icon-danger
-									i.fa-regular.fa-circle-exclamation
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													a(data-bs-toggle='offcanvas' href='#offcanvasExample' role='button' aria-controls='offcanvasExample')
+														.avatar-label-group
+															.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+																.avatar-container
+															.avatar-label-group-container
+																span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
 
-							.modal-title Are you sure?
-							| Are you sure you would like to delete this brand?
-							br
-							b.danger-600 You can't revert this action.
-					.modal-actions
-						.row
-							.col-6
-								button.btn.btn-danger.d-block(type='button') Delete
-							.col-6
-								button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
 
-		//- CREATE BRAND 1
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
 
-		#createBrand.modal.modal-xl.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
-			.modal-dialog.modal-dialog-centered
-				.modal-content
-					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-					.modal-body
-						.row
-							.col-5.d-flex.flex-column.justify-content-center.align-items-center
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
 
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+											tr
+												td
+													.avatar-label-group
+														.avatar(style="background: url('/assets/images/coca-cola.png'); background-size: 100%")
+															.avatar-container
+														.avatar-label-group-container
+															span.title Coca-Cola
+												td.text
+													| Coca-Cola Inc.
+												td.text
+													| Beverages
+												td.text-center
+													| www.coca-cola.com
+												td.text-center Nov. 17th, 2022
+												td.has-actions
+													ul
+														li
+															a(href="#")
+																i.fa-regular.fa-link
+
+														li
+															a.link-danger(href="#" data-bs-toggle='modal' data-bs-target='#confirmDelete')
+																i.fa-regular.fa-trash-can
+
+				//- MODAL
+
+				#confirmDelete.modal.modal-sm.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+					.modal-dialog.modal-dialog-centered
+						.modal-content
+							button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+							.modal-body
 								.text-center
-									img.p-3(src="/assets/images/new-user2.png" style="width: 85%")
-									.col-8.mx-auto
-										.modal-title Create a brand
-										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis mollis urna, id maximus felis pharetra finibus. Morbi maximus sapien a sem faucibus, in tincidunt dolor gravida.
-							.col
-								
-								.gray-100-bg.p-4.rounded.mt-2
-									.row
-										.col
-											label.form-label(for="ControlInput1") Brand Name
-											.input-group
-												span.input-group-text
-													i.fa-regular.fa-medal
-												input.form-control(type="text" placeholder="Enter brand's name" aria-label="Example" aria-describedby="addon")
-										.col
-											label.form-label(for="ControlInput1") Account
-											.input-group
-												span.input-group-text
-													i.fa-regular.fa-cabinet-filing
-												select.form-select.form-select-sm(aria-label="Select an account")
-													option(selected) Select an account
-													option(value="1") Super Admin
-													option(value="2") Owner
-													option(value="3") Team Leader
-													option(value="4") Designer
-													option(value="5") Account Manager
-													option(value="6") Organization Admin
-									.row.mt-4
-										.col
-											label.form-label(for="ControlInput1") Industry
-											.input-group
-												span.input-group-text
-													i.fa-regular.fa-medal
-												input.form-control(type="text" placeholder="Enter brand's industry" aria-label="Example" aria-describedby="addon")
-										.col
-											label.form-label(for="ControlInput1") Website
-											.input-group
-												span.input-group-text
-													i.fa-regular.fa-medal
-												input.form-control(type="text" placeholder="Brand's website" aria-label="Example" aria-describedby="addon")
-									.row.mt-3
-										.col
-											.position-relative
-												label.form-label(for="ControlInput1") Audience
-												.input-group
-													span.input-group-text
-														i.fa-regular.fa-square-user
-													input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
-												.position-absolute(style="top: 2.05rem; left: 3rem")
-													.tag
-														.tag-content 
-															| Example
-															i.fa-regular.fa-close
-													.tag
-														.tag-content 
-															| Example
-															i.fa-regular.fa-close
-													.tag
-														.tag-content 
-															| Example
-															i.fa-regular.fa-close
-													.tag
-														.tag-content 
-															| Example
-															i.fa-regular.fa-close
-									.row.mt-3
-										.col
-											.position-relative
-												label.form-label(for="ControlInput1") Colors
-												.input-group
-													span.input-group-text
-														i.fa-regular.fa-droplet
-													input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
-												.position-absolute(style="top: 2.05rem; left: 3rem")
-													.tag
-														.tag-content 
-															i.fa-solid.fa-circle-small
-															| #6B04FF
-															i.fa-regular.fa-close
-													.tag.tag-success
-														.tag-content 
-															i.fa-solid.fa-circle-small
-															| #039855
-															i.fa-regular.fa-close
-									.row.mt-3
-										.col
-											.position-relative
-												label.form-label(for="ControlInput1") Fonts
-												.input-group
-													span.input-group-text
-														i.fa-regular.fa-square-user
-													input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
-												.position-absolute(style="top: 2.05rem; left: 3rem")
-													.tag
-														.tag-content 
-															| Google Inter
-															i.fa-regular.fa-close
-													.tag
-														.tag-content 
-															| Google Open Sans
-															i.fa-regular.fa-close
+									.feat-icon
+										.feat-icon-circle.feat-icon-lg.feat-icon-danger
+											i.fa-regular.fa-circle-exclamation
 
-								.modal-actions.mt-1
-									.row
-										.col-6
-											button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
-										.col-6
-											button.btn.btn-primary.d-block(type='button' data-bs-title="Create a new brand" data-bs-toggle='modal' data-bs-target='#createBrand2') 
-												| Next
-												i.fa-regular.fa-chevron-right
-
-		//- CREATE BRAND 2
-
-		#createBrand2.modal.modal-xl.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
-			.modal-dialog.modal-dialog-centered
-				.modal-content
-					button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-					.modal-body
-						.row
-							.col-5.d-flex.flex-column.justify-content-center.align-items-center
-
-								.text-center
-									img.p-3(src="/assets/images/new-user2.png" style="width: 85%")
-									.col-8.mx-auto
-										.modal-title Create a brand
-										| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis mollis urna, id maximus felis pharetra finibus. Morbi maximus sapien a sem faucibus, in tincidunt dolor gravida.
-							.col
+									.modal-title Are you sure?
+									| Are you sure you would like to delete this brand?
+									br
+									b.danger-600 You can't revert this action.
+							.modal-actions
 								.row
-									button.btn.btn-small.btn-secondary-gray.mb-3.ms-2.fit-content(style="margin-top: -1rem" type='button' data-bs-toggle='modal' data-bs-target='#createBrand')
-										i.fa-regular.fa-chevron-left
-										| Go back
-								
-								.gray-100-bg.p-4.rounded.mt-2
-									.row
-										.col
-											label.form-label(for="ControlInput1") Brand Description
-											textarea#exampleFormControlTextarea1.form-control(rows='3')
+									.col-6
+										button.btn.btn-danger.d-block(type='button') Delete
+									.col-6
+										button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
 
-								.modal-actions.mt-1
-									.row
-										.col-6
-											button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal')  Cancel
-										.col-6
-											button.btn.btn-primary.d-block(type='button' data-bs-dismiss='modal') 
-												i.fa-regular.fa-floppy-disk
-												| Save
+	//- CREATE BRAND 1
+
+	#createBrand.modal.modal-xl.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.row
+						.col-5.d-flex.flex-column.justify-content-center.align-items-center
+
+							.text-center
+								img.p-3(src="/assets/images/new-user2.png" style="width: 85%")
+								.col-8.mx-auto
+									.modal-title Create a brand
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis mollis urna, id maximus felis pharetra finibus. Morbi maximus sapien a sem faucibus, in tincidunt dolor gravida.
+						.col
+							
+							.gray-100-bg.p-4.rounded.mt-2
+								.row
+									.col
+										label.form-label(for="ControlInput1") Brand Name
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-medal
+											input.form-control(type="text" placeholder="Enter brand's name" aria-label="Example" aria-describedby="addon")
+									.col
+										label.form-label(for="ControlInput1") Account
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-cabinet-filing
+											select.form-select.form-select-sm(aria-label="Select an account")
+												option(selected) Select an account
+												option(value="1") Super Admin
+												option(value="2") Owner
+												option(value="3") Team Leader
+												option(value="4") Designer
+												option(value="5") Account Manager
+												option(value="6") Organization Admin
+								.row.mt-4
+									.col
+										label.form-label(for="ControlInput1") Industry
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-medal
+											input.form-control(type="text" placeholder="Enter brand's industry" aria-label="Example" aria-describedby="addon")
+									.col
+										label.form-label(for="ControlInput1") Website
+										.input-group
+											span.input-group-text
+												i.fa-regular.fa-medal
+											input.form-control(type="text" placeholder="Brand's website" aria-label="Example" aria-describedby="addon")
+								.row.mt-3
+									.col
+										.position-relative
+											label.form-label(for="ControlInput1") Audience
+											.input-group
+												span.input-group-text
+													i.fa-regular.fa-square-user
+												input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
+											.position-absolute(style="top: 2.05rem; left: 3rem")
+												.tag
+													.tag-content 
+														| Example
+														i.fa-regular.fa-close
+												.tag
+													.tag-content 
+														| Example
+														i.fa-regular.fa-close
+												.tag
+													.tag-content 
+														| Example
+														i.fa-regular.fa-close
+												.tag
+													.tag-content 
+														| Example
+														i.fa-regular.fa-close
+								.row.mt-3
+									.col
+										.position-relative
+											label.form-label(for="ControlInput1") Colors
+											.input-group
+												span.input-group-text
+													i.fa-regular.fa-droplet
+												input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
+											.position-absolute(style="top: 2.05rem; left: 3rem")
+												.tag
+													.tag-content 
+														i.fa-solid.fa-circle-small
+														| #6B04FF
+														i.fa-regular.fa-close
+												.tag.tag-success
+													.tag-content 
+														i.fa-solid.fa-circle-small
+														| #039855
+														i.fa-regular.fa-close
+								.row.mt-3
+									.col
+										.position-relative
+											label.form-label(for="ControlInput1") Fonts
+											.input-group
+												span.input-group-text
+													i.fa-regular.fa-square-user
+												input.form-control(type="text" placeholder="" aria-label="Example" aria-describedby="addon")
+											.position-absolute(style="top: 2.05rem; left: 3rem")
+												.tag
+													.tag-content 
+														| Google Inter
+														i.fa-regular.fa-close
+												.tag
+													.tag-content 
+														| Google Open Sans
+														i.fa-regular.fa-close
+
+							.modal-actions.mt-1
+								.row
+									.col-6
+										button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel
+									.col-6
+										button.btn.btn-primary.d-block(type='button' data-bs-title="Create a new brand" data-bs-toggle='modal' data-bs-target='#createBrand2') 
+											| Next
+											i.fa-regular.fa-chevron-right
+
+	//- CREATE BRAND 2
+
+	#createBrand2.modal.modal-xl.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.row
+						.col-5.d-flex.flex-column.justify-content-center.align-items-center
+
+							.text-center
+								img.p-3(src="/assets/images/new-user2.png" style="width: 85%")
+								.col-8.mx-auto
+									.modal-title Create a brand
+									| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis mollis urna, id maximus felis pharetra finibus. Morbi maximus sapien a sem faucibus, in tincidunt dolor gravida.
+						.col
+							.row
+								button.btn.btn-small.btn-secondary-gray.mb-3.ms-2.fit-content(style="margin-top: -1rem" type='button' data-bs-toggle='modal' data-bs-target='#createBrand')
+									i.fa-regular.fa-chevron-left
+									| Go back
+							
+							.gray-100-bg.p-4.rounded.mt-2
+								.row
+									.col
+										label.form-label(for="ControlInput1") Brand Description
+										textarea#exampleFormControlTextarea1.form-control(rows='3')
+
+							.modal-actions.mt-1
+								.row
+									.col-6
+										button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal')  Cancel
+									.col-6
+										button.btn.btn-primary.d-block(type='button' data-bs-dismiss='modal') 
+											i.fa-regular.fa-floppy-disk
+											| Save
+
+	
+
+
+	//- MODAL
+
+	#confirmSuspend.modal.modal-sm.fade(tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true')
+		.modal-dialog.modal-dialog-centered
+			.modal-content
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+				.modal-body
+					.text-center
+						.feat-icon
+							.feat-icon-circle.feat-icon-lg.feat-icon-danger
+								i.fa-regular.fa-circle-exclamation
+
+						.modal-title Are you sure?
+						| Are you sure you would like to suspend this account?
+						| You can't revert this action
+				.modal-actions
+					.row
+						.col-6
+							button.btn.btn-danger.d-block(type='button') Suspend
+						.col-6
+							button.btn.btn-secondary-gray.d-block(type='button' data-bs-dismiss='modal') Cancel

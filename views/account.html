@@ -8,385 +8,268 @@
     <!-- Styles-->
     <link href="/assets/css/styles.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6826777e4e.js" crossorigin="anonymous"></script>
+    <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div class="main-content">
-        <nav class="sidebar">
-          <div class="nav-container"><a class="brand"><img src="/assets/images/brand.png"></a>
-            <div class="top-menu">
-              <div class="impersonation-panel">
-                <div class="avatar-label-group">
-                  <div class="avatar">
-                    <div class="avatar-container"></div>
-                    <div class="online-indicator-on"></div>
+    <div class="contents overflow-hidden">
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="card">
+            <div class="page-header">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumbs">
+                  <li class="breadcrumbs-item active" aria-current="page"><i class="fa-regular fa-house-chimney-blank"></i></li>
+                  <li class="breadcrumbs-item div-slash"><i class="fa-regular fa-slash-forward"></i></li>
+                  <li class="breadcrumbs-item"><a href="#"> Accounts</a></li>
+                  <li class="breadcrumbs-item div-slash"><i class="fa-regular fa-slash-forward"></i></li>
+                  <li class="breadcrumbs-item">Account Name</li>
+                </ol>
+              </nav>
+              <div class="header-content">
+                <div class="page-title"> <i class="fa-light fa-cabinet-filing"></i>
+                  <div class="d-flex flex-column">
+                     Account Name
+                    <div class="text-sm-regular gray-500">Business - 4x Graphic - $1.596 (Monthly)</div>
                   </div>
-                  <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
                 </div>
-                <div class="tag tag-danger">
-                  <div class="tag-content"> <i class="fa-regular fa-masks-theater"></i>Impersonating<i class="fa-regular fa-close gray-600"></i></div>
-                </div>
-              </div>
-              <ul>
-                <li><a class="menu-item" href="dashboard.html"> 
-                    <div class="link-content"><i class="fa-regular fa-grid-2"></i>
-                      <div>Dashboard</div>
-                    </div></a></li>
-                <li><a class="menu-item active" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-bell"></i>
-                      <div>Notifications</div>
+                <div class="actions">
+                  <div class="account-owner-panel">
+                    <div class="avatar-label-group">
+                      <div class="avatar">
+                        <div class="avatar-container"></div>
+                      </div>
+                      <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
                     </div>
-                    <div class="badge">10</div></a></li>
-                <li><a class="menu-item" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-building"></i>
-                      <div>Organizations</div>
-                    </div></a></li>
-                <li><a class="menu-item" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-bars-progress"></i>
-                      <div>Requests</div>
-                    </div>
-                    <div class="badge">10</div></a></li>
-                <li><a class="menu-item" href="brands.html"> 
-                    <div class="link-content"><i class="fa-regular fa-medal"></i>
-                      <div>Brands</div>
-                    </div></a></li>
-                <li><a class="menu-item" href="users.html"> 
-                    <div class="link-content"><i class="fa-regular fa-user"></i>
-                      <div>Users</div>
-                    </div></a></li>
-                <li><a class="menu-item" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-users"></i>
-                      <div>Teams</div>
-                    </div></a></li>
-                <li><a class="menu-item" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-cabinet-filing"></i>
-                      <div>Accounts</div>
-                    </div></a></li>
-                <li><a class="menu-item" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-file-chart-column"></i>
-                      <div>Reports</div>
-                    </div></a></li>
-                <li><a class="menu-item" href="#"> 
-                    <div class="link-content"><i class="fa-regular fa-lightbulb-cfl-on"></i>
-                      <div>Inspiration</div>
-                    </div></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="nav-container bottom-container">
-            <ul>
-              <li><a class="menu-item" href="#"> 
-                  <div class="link-content"><i class="fa-regular fa-credit-card"></i>
-                    <div>Billing</div>
-                  </div></a></li>
-              <li><a class="menu-item" href="#"> 
-                  <div class="link-content"><i class="fa-regular fa-toolbox"></i>
-                    <div>Tools</div>
-                  </div></a></li>
-              <li><a class="menu-item" href="#"> 
-                  <div class="link-content"><i class="fa-regular fa-life-ring"></i>
-                    <div>Support</div>
-                  </div></a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="main-panel overflow-hidden">
-          <nav class="navbar navbar-expand-lg" style="z-index: 1000 !important">
-            <div class="container-fluid p-0">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="manage-plan">
-                  <div class="plan-contents">
-                    <div class="plan-label">Current Plan</div>
-                    <div class="plan-description">Graphics + Video (Monthly)</div>
-                  </div>
-                  <div class="btn btn-sm btn-secondary-gray">Manage</div>
-                </div>
-                <div class="right">
-                  <form class="d-flex me-3" role="search">
-                    <div class="input-group"><span class="input-group-text"><i class="fa-regular fa-magnifying-glass"></i></span>
-                      <input class="form-control" type="text" placeholder="Global Search" aria-label="Example" aria-describedby="addon">
-                    </div>
-                  </form>
-                  <div class="avatar dropdown ms-3">
-                    <div class="avatar-container dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></div>
-                    <div class="indicator-icon"><i class="fa-regular fa-chevron-down"></i></div>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                      <li><a class="dropdown-item" href="user-profile.html"> <i class="fa-regular fa-user"> </i>Profile</a></li>
-                      <li><a class="dropdown-item" href="settings.html"> <i class="fa-regular fa-gear"></i>Settings</a></li>
-                      <li><a class="dropdown-item" href="#"> <i class="fa-regular fa-bullhorn"></i>Announcements</a></li>
-                      <li><a class="dropdown-item" href="#"> <i class="fa-regular fa-user-astronaut"></i>Referral Program</a></li>
-                      <li><a class="dropdown-item" href="#"> <i class="fa-regular fa-bug"></i>Report a Bug</a></li>
-                      <li>
-                        <hr class="dropdown-divider">
-                      </li>
-                      <li><a class="dropdown-item danger" href="#"><i class="fa-regular fa-arrow-right-to-bracket"></i>Logout</a></li>
-                    </ul>
+                    <div class="btn btn-sm btn-primary" data-bs-toggle="tooltip" data-bs-title="Impersonate account owner"><i class="fa-regular fa-masks-theater me-2"></i>Impersonate</div>
                   </div>
                 </div>
               </div>
+              <div class="header-options">
+                <ul class="tab-menu">
+                  <li class="tab-item active"><a href="#">
+                       Overview</a></li>
+                  <li class="tab-item"><a href="#">
+                       Settings</a></li>
+                  <li class="tab-item"><a href="#">
+                       Brands</a></li>
+                  <li class="tab-item"><a href="#">
+                       Users</a></li>
+                  <li class="tab-item"><a href="#">
+                       Internal Notes</a></li>
+                  <li class="tab-item"><a href="#">
+                       Marketplace Purchases</a></li>
+                  <li class="tab-item"><a href="#">
+                       Activity Log</a></li>
+                </ul>
+              </div>
             </div>
-          </nav>
-          <div class="contents overflow-hidden">
-            <div class="row mt-4">
-              <div class="col-12">
-                <div class="card">
-                  <div class="page-header">
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumbs">
-                        <li class="breadcrumbs-item active" aria-current="page"><i class="fa-regular fa-house-chimney-blank"></i></li>
-                        <li class="breadcrumbs-item div-slash"><i class="fa-regular fa-slash-forward"></i></li>
-                        <li class="breadcrumbs-item"><a href="#"> Accounts</a></li>
-                        <li class="breadcrumbs-item div-slash"><i class="fa-regular fa-slash-forward"></i></li>
-                        <li class="breadcrumbs-item">Account Name</li>
-                      </ol>
-                    </nav>
-                    <div class="header-content">
-                      <div class="page-title"> <i class="fa-light fa-cabinet-filing"></i>
-                        <div class="d-flex flex-column">
-                           Account Name
-                          <div class="text-sm-regular gray-500">Business - 4x Graphic - $1.596 (Monthly)</div>
-                        </div>
-                      </div>
-                      <div class="actions">
-                        <div class="account-owner-panel">
-                          <div class="avatar-label-group">
-                            <div class="avatar">
-                              <div class="avatar-container"></div>
-                            </div>
-                            <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                          </div>
-                          <div class="btn btn-sm btn-primary" data-bs-toggle="tooltip" data-bs-title="Impersonate account owner"><i class="fa-regular fa-masks-theater me-2"></i>Impersonate</div>
-                        </div>
-                      </div>
+            <div class="card-body">
+              <div class="contents" style="height: auto">
+                <h5 class="text-center">Feedback Summary</h5>
+                <div class="feedback-summary">
+                  <div class="feedback-good">
+                    <div class="feedback-container">
+                      <h1>19</h1>
+                      <div class="feedback-label">GOOD</div>
                     </div>
-                    <div class="header-options">
-                      <ul class="tab-menu">
-                        <li class="tab-item active"><a href="#">
-                             Overview</a></li>
-                        <li class="tab-item"><a href="#">
-                             Settings</a></li>
-                        <li class="tab-item"><a href="#">
-                             Brands</a></li>
-                        <li class="tab-item"><a href="#">
-                             Users</a></li>
-                        <li class="tab-item"><a href="#">
-                             Internal Notes</a></li>
-                        <li class="tab-item"><a href="#">
-                             Marketplace Purchases</a></li>
-                        <li class="tab-item"><a href="#">
-                             Activity Log</a></li>
-                      </ul>
-                    </div>
+                    <div class="feedback-explanation">Curabitur sagittis feugiat ante</div>
                   </div>
-                  <div class="card-body">
-                    <div class="contents" style="height: auto">
-                      <h5 class="text-center">Feedback Summary</h5>
-                      <div class="feedback-summary">
-                        <div class="feedback-good">
-                          <div class="feedback-container">
-                            <h1>19</h1>
-                            <div class="feedback-label">GOOD</div>
-                          </div>
-                          <div class="feedback-explanation">Curabitur sagittis feugiat ante</div>
-                        </div>
-                        <div class="feedback-neutral">
-                          <div class="feedback-container">
-                            <h1>19</h1>
-                            <div class="feedback-label">NEUTRAL</div>
-                          </div>
-                          <div class="feedback-explanation">Curabitur sagittis feugiat ante</div>
-                        </div>
-                        <div class="feedback-poor">
-                          <div class="feedback-container">
-                            <h1>19</h1>
-                            <div class="feedback-label">POOR</div>
-                          </div>
-                          <div class="feedback-explanation">Curabitur sagittis feugiat ante</div>
-                        </div>
-                        <div class="feedback-overral">
-                          <div class="feedback-container">
-                            <div class="text-center">
-                              <h1 class="success-600">83<small>%</small></h1>
-                            </div>
-                            <div class="feedback-explanation">
-                              <h6>Overral</h6>
-                              <div class="mb-1">Curabitur sagittis feugiat ante </div>
-                              <div class="progress">
-                                <div class="progress-bar success-500-bg" role="progressbar" aria-label="Basic example" style="width: 83%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>
-                            </div>
-                          </div>
+                  <div class="feedback-neutral">
+                    <div class="feedback-container">
+                      <h1>19</h1>
+                      <div class="feedback-label">NEUTRAL</div>
+                    </div>
+                    <div class="feedback-explanation">Curabitur sagittis feugiat ante</div>
+                  </div>
+                  <div class="feedback-poor">
+                    <div class="feedback-container">
+                      <h1>19</h1>
+                      <div class="feedback-label">POOR</div>
+                    </div>
+                    <div class="feedback-explanation">Curabitur sagittis feugiat ante</div>
+                  </div>
+                  <div class="feedback-overral">
+                    <div class="feedback-container">
+                      <div class="text-center">
+                        <h1 class="success-600">83<small>%</small></h1>
+                      </div>
+                      <div class="feedback-explanation">
+                        <h6>Overral</h6>
+                        <div class="mb-1">Curabitur sagittis feugiat ante </div>
+                        <div class="progress">
+                          <div class="progress-bar success-500-bg" role="progressbar" aria-label="Basic example" style="width: 83%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                       </div>
-                    </div>
-                    <div class="card-table">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col" style="width: 45%"><span>Name</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
-                            <th scope="col" style="width: 15%"><span>Designer</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
-                            <th class="text-center" scope="col"><span>Completed</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
-                            <th class="text-center" scope="col" style="width: 10%"><span>Rating</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
-                            <th class="text-center" scope="col" style="width: 10%"><span>Date Created</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
-                            <th scope="col" style="width: 10%"></th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="lead-text">JRC 7x Listing Images - Aluminum Bar End Plugs - Part 2/2 (x4 Graphics)</td>
-                            <td>
-                              <div class="avatar-label-group">
-                                <div class="avatar">
-                                  <div class="avatar-container"></div>
-                                </div>
-                                <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                              </div>
-                            </td>
-                            <td class="text-center">
-                              <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
-                            </td>
-                            <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
-                            <td class="text-center">Nov. 17th, 2022</td>
-                            <td class="has-actions">
-                              <ul>
-                                <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
-                                <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="lead-text">Nutritional Fact Black and White</td>
-                            <td>
-                              <div class="avatar-label-group">
-                                <div class="avatar">
-                                  <div class="avatar-container"></div>
-                                </div>
-                                <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                              </div>
-                            </td>
-                            <td class="text-center">
-                              <div class="text-lg-medium"></div>
-                            </td>
-                            <td class="rating-starts text-center"><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
-                            <td class="text-center">Nov. 17th, 2022</td>
-                            <td class="has-actions">
-                              <ul>
-                                <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
-                                <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="lead-text">BQ: Card Payment Machine Performance Max Campaign</td>
-                            <td>
-                              <div class="avatar-label-group">
-                                <div class="avatar">
-                                  <div class="avatar-container"></div>
-                                </div>
-                                <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                              </div>
-                            </td>
-                            <td class="text-center">
-                              <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
-                            </td>
-                            <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a></td>
-                            <td class="text-center">Nov. 17th, 2022</td>
-                            <td class="has-actions">
-                              <ul>
-                                <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
-                                <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="lead-text">Reen B31 opt2 x 1 video - Graphic</td>
-                            <td>
-                              <div class="avatar-label-group">
-                                <div class="avatar">
-                                  <div class="avatar-container"></div>
-                                </div>
-                                <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                              </div>
-                            </td>
-                            <td class="text-center">
-                              <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
-                            </td>
-                            <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
-                            <td class="text-center">Nov. 17th, 2022</td>
-                            <td class="has-actions">
-                              <ul>
-                                <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
-                                <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="lead-text">DK MBA - 22-day Plan Iterations - JUL22</td>
-                            <td>
-                              <div class="avatar-label-group">
-                                <div class="avatar">
-                                  <div class="avatar-container"></div>
-                                </div>
-                                <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                              </div>
-                            </td>
-                            <td class="text-center">
-                              <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
-                            </td>
-                            <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
-                            <td class="text-center">Nov. 17th, 2022</td>
-                            <td class="has-actions">
-                              <ul>
-                                <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
-                                <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="lead-text">eAdvisor- Case Study Retargeting Campaign</td>
-                            <td>
-                              <div class="avatar-label-group">
-                                <div class="avatar">
-                                  <div class="avatar-container"></div>
-                                </div>
-                                <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
-                              </div>
-                            </td>
-                            <td class="text-center">
-                              <div class="text-lg-medium"></div>
-                            </td>
-                            <td class="rating-starts text-center"><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
-                            <td class="text-center">Nov. 17th, 2022</td>
-                            <td class="has-actions">
-                              <ul>
-                                <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
-                                <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
-                              </ul>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="card-table">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col" style="width: 45%"><span>Name</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
+                      <th scope="col" style="width: 15%"><span>Designer</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
+                      <th class="text-center" scope="col"><span>Completed</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
+                      <th class="text-center" scope="col" style="width: 10%"><span>Rating</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
+                      <th class="text-center" scope="col" style="width: 10%"><span>Date Created</span><a href="#"><i class="fa-regular fa-circle-question"></i></a><a href="#"><i class="fa-regular fa-arrow-down"></i></a></th>
+                      <th scope="col" style="width: 10%"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="lead-text">JRC 7x Listing Images - Aluminum Bar End Plugs - Part 2/2 (x4 Graphics)</td>
+                      <td>
+                        <div class="avatar-label-group">
+                          <div class="avatar">
+                            <div class="avatar-container"></div>
+                          </div>
+                          <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
+                      </td>
+                      <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
+                      <td class="text-center">Nov. 17th, 2022</td>
+                      <td class="has-actions">
+                        <ul>
+                          <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+                          <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
+                          <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="lead-text">Nutritional Fact Black and White</td>
+                      <td>
+                        <div class="avatar-label-group">
+                          <div class="avatar">
+                            <div class="avatar-container"></div>
+                          </div>
+                          <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <div class="text-lg-medium"></div>
+                      </td>
+                      <td class="rating-starts text-center"><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
+                      <td class="text-center">Nov. 17th, 2022</td>
+                      <td class="has-actions">
+                        <ul>
+                          <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+                          <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
+                          <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="lead-text">BQ: Card Payment Machine Performance Max Campaign</td>
+                      <td>
+                        <div class="avatar-label-group">
+                          <div class="avatar">
+                            <div class="avatar-container"></div>
+                          </div>
+                          <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
+                      </td>
+                      <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a></td>
+                      <td class="text-center">Nov. 17th, 2022</td>
+                      <td class="has-actions">
+                        <ul>
+                          <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+                          <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
+                          <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="lead-text">Reen B31 opt2 x 1 video - Graphic</td>
+                      <td>
+                        <div class="avatar-label-group">
+                          <div class="avatar">
+                            <div class="avatar-container"></div>
+                          </div>
+                          <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
+                      </td>
+                      <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
+                      <td class="text-center">Nov. 17th, 2022</td>
+                      <td class="has-actions">
+                        <ul>
+                          <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+                          <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
+                          <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="lead-text">DK MBA - 22-day Plan Iterations - JUL22</td>
+                      <td>
+                        <div class="avatar-label-group">
+                          <div class="avatar">
+                            <div class="avatar-container"></div>
+                          </div>
+                          <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <div class="text-lg-medium"><i class="fa-regular fa-circle-check success-500"></i></div>
+                      </td>
+                      <td class="rating-starts text-center"><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a class="active" href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
+                      <td class="text-center">Nov. 17th, 2022</td>
+                      <td class="has-actions">
+                        <ul>
+                          <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+                          <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
+                          <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="lead-text">eAdvisor- Case Study Retargeting Campaign</td>
+                      <td>
+                        <div class="avatar-label-group">
+                          <div class="avatar">
+                            <div class="avatar-container"></div>
+                          </div>
+                          <div class="avatar-label-group-container"><span class="title">John Oliveira</span><span class="subtitle">john@nlc.com</span></div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <div class="text-lg-medium"></div>
+                      </td>
+                      <td class="rating-starts text-center"><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a><a href="#"><i class="fa-solid fa-star"></i></a></td>
+                      <td class="text-center">Nov. 17th, 2022</td>
+                      <td class="has-actions">
+                        <ul>
+                          <li><a href="#"><i class="fa-regular fa-copy"></i></a></li>
+                          <li><a href="#"><i class="fa-regular fa-link"></i></a></li>
+                          <li><a class="link-danger" href="#"><i class="fa-regular fa-trash-can"></i></a></li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="chat-bubble"><i class="fa-regular fa-message"></i>
+    <div class="chat-bubble"><i class="fa-regular fa-message-question"></i>
       <div class="bubble-text">Support Chat</div>
     </div>
     <script src="./assets/js/scripts.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script>
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

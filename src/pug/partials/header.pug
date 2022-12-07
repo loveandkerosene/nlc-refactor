@@ -4,46 +4,48 @@ nav.navbar.navbar-expand-lg(style="z-index: 1000 !important")
 		button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
 			span.navbar-toggler-icon
 
-		#navbarSupportedContent.collapse.navbar-collapse
-			.manage-plan
-				.plan-contents
-					.plan-label Current Plan
-					.plan-description Graphics + Video (Monthly)
-				.btn.btn-sm.btn-secondary-gray Manage
-			.right
-				form.d-flex(role='search').me-3
-					.input-group
-						span.input-group-text
-							i.fa-regular.fa-magnifying-glass
-						input.form-control(type="text" placeholder="Global Search" aria-label="Example" aria-describedby="addon")
-				.avatar.dropdown.ms-3
-					.avatar-container.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
-					.indicator-icon
-						i.fa-regular.fa-chevron-down
-					ul.dropdown-menu.dropdown-menu-end
-						li
-							a.dropdown-item(href='user-profile.html') 
-								i.fa-regular.fa-user 
-								| Profile
-						li
-							a.dropdown-item(href='settings.html') 
-								i.fa-regular.fa-gear
-								| Settings
-						li
-							a.dropdown-item(href='#') 
-								i.fa-regular.fa-bullhorn
-								| Announcements
-						li
-							a.dropdown-item(href='#') 
-								i.fa-regular.fa-user-astronaut
-								| Referral Program
-						li
-							a.dropdown-item(href='#') 
-								i.fa-regular.fa-bug
-								| Report a Bug
-						li
-							hr.dropdown-divider
-						li
-							a.dropdown-item.danger(href='#')
-								i.fa-regular.fa-arrow-right-to-bracket
-								| Logout
+		.collapse.navbar-collapse
+			//- .manage-plan
+			//- 	.plan-contents
+			//- 		.plan-label Current Plan
+			//- 		.plan-description Graphics + Video (Monthly)
+			//- 	.btn.btn-sm.btn-secondary-gray Manage
+			
+			form.d-flex(role='search').me-3
+				.input-group
+					span.input-group-text
+						i.fa-regular.fa-magnifying-glass
+					input.form-control(type="text" placeholder="Global Search" aria-label="Example" aria-describedby="addon")
+			.btn.btn-tertiary-gray
+				i.fa-regular.fa-bell
+			.avatar.dropdown.ms-3
+				.avatar-container.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+				.indicator-icon
+					i.fa-regular.fa-chevron-down
+				ul.dropdown-menu.dropdown-menu-end
+					li
+						a.dropdown-item(href='user-profile.html') 
+							i.fa-regular.fa-user 
+							| Profile
+					li
+						a.dropdown-item(href='settings.html') 
+							i.fa-regular.fa-gear
+							| Settings
+					li
+						a.dropdown-item(href='#') 
+							i.fa-regular.fa-bullhorn
+							| Announcements
+					li
+						a.dropdown-item(href='#') 
+							i.fa-regular.fa-user-astronaut
+							| Referral Program
+					li
+						a.dropdown-item(href='#') 
+							i.fa-regular.fa-bug
+							| Report a Bug
+					li
+						hr.dropdown-divider
+					li
+						a.dropdown-item.danger(href='#')
+							i.fa-regular.fa-arrow-right-to-bracket
+							| Logout

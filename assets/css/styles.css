@@ -5638,7 +5638,7 @@ textarea.form-control-lg {
 
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
-  --bs-backdrop-bg: #000;
+  --bs-backdrop-bg: transparent;
   --bs-backdrop-opacity: 0.5;
   position: fixed;
   top: 0;
@@ -6488,7 +6488,7 @@ textarea.form-control-lg {
 }
 .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
   --bs-offcanvas-zindex: 1045;
-  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-width: 45%;
   --bs-offcanvas-height: 30vh;
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
@@ -7150,7 +7150,7 @@ textarea.form-control-lg {
   z-index: 1040;
   width: 100vw;
   height: 100vh;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .offcanvas-backdrop.fade {
@@ -7595,7 +7595,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, ul.notification-list li a .notification-header, ul.notification-list li a, .feedback-summary .feedback-overral .feedback-container, .feedback-summary .feedback-overral, .feedback-summary .feedback-good .feedback-container, .feedback-summary .feedback-poor .feedback-container, .feedback-summary .feedback-neutral .feedback-container, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, .feedback-summary, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, ul.tab-menu, .main-content, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, nav.sidebar, .main-panel .nav-link, .main-panel nav.navbar .manage-plan .plan-contents, .main-panel nav.navbar .manage-plan, .main-panel nav.navbar a.dropdown-item, .main-panel nav.navbar .collapse.navbar-collapse .right, .main-panel nav.navbar .collapse.navbar-collapse, .main-panel nav.navbar, .main-panel, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .content, .empty-state.empty-state-h .container-empty-state, .empty-state .actions, .empty-state .content, .empty-state, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .card .card-header .actions, .card .card-header, button.btn, .btn, a.btn, ol.breadcrumbs, .banner .content .text, .banner .content, .banner, .badge, .avatar-group ul.avatar-list, .avatar-label-group .avatar-label-group-container, .avatar-label-group, .alert .content .actions, .alert, .chat-bubble {
+.d-flex, ul.notification-list li a .notification-header, ul.notification-list li a, .feedback-summary .feedback-overral .feedback-container, .feedback-summary .feedback-overral, .feedback-summary .feedback-good .feedback-container, .feedback-summary .feedback-poor .feedback-container, .feedback-summary .feedback-neutral .feedback-container, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, .feedback-summary, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, ul.tab-menu, .header-options, .offcanvas-header .actions, .offcanvas-header .header-content-left .title, .offcanvas-header .header-content-left a.offcanvas-close, .offcanvas-header .header-content-left, .offcanvas-header, .main-content, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, nav.sidebar, .nav-link, nav.navbar .manage-plan .plan-contents, nav.navbar .manage-plan, nav.navbar a.dropdown-item, nav.navbar .collapse.navbar-collapse .right, nav.navbar .collapse.navbar-collapse, nav.navbar, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .content, .empty-state.empty-state-h .container-empty-state, .empty-state .actions, .empty-state .content, .empty-state, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .card .card-header .actions, .card .card-header, button.btn, .btn, a.btn, ol.breadcrumbs, .banner .content .text, .banner .content, .banner, .badge, .avatar-group ul.avatar-list, .avatar-label-group .avatar-label-group-container, .avatar-label-group, .alert .content .actions, .alert, .portal section.portal-contents, .portal, .chat-bubble {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -7912,14 +7912,14 @@ textarea.form-control-lg {
   flex: 1 1 auto !important;
 }
 
-.flex-row, ul.notification-list li a .notification-header, ul.notification-list li a, .feedback-summary .feedback-overral .feedback-container, .feedback-summary .feedback-overral, .feedback-summary .feedback-good .feedback-container, .feedback-summary .feedback-poor .feedback-container, .feedback-summary .feedback-neutral .feedback-container, .feedback-summary, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, ul.tab-menu, .main-content, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, .main-panel .nav-link, .main-panel nav.navbar .manage-plan, .main-panel nav.navbar a.dropdown-item, .main-panel nav.navbar .collapse.navbar-collapse .right, .main-panel nav.navbar .collapse.navbar-collapse, .main-panel nav.navbar, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .container-empty-state, .empty-state .actions, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .card .card-header .actions, .card .card-header, button.btn, .btn, a.btn, ol.breadcrumbs, .banner .content, .banner, .badge, .avatar-group ul.avatar-list, .avatar-label-group, .alert .content .actions, .alert, .chat-bubble {
+.flex-row, ul.notification-list li a .notification-header, ul.notification-list li a, .feedback-summary .feedback-overral .feedback-container, .feedback-summary .feedback-overral, .feedback-summary .feedback-good .feedback-container, .feedback-summary .feedback-poor .feedback-container, .feedback-summary .feedback-neutral .feedback-container, .feedback-summary, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, ul.tab-menu, .header-options, .offcanvas-header .actions, .offcanvas-header .header-content-left .title, .offcanvas-header .header-content-left a.offcanvas-close, .offcanvas-header .header-content-left, .offcanvas-header, .main-content, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, .nav-link, nav.navbar .manage-plan, nav.navbar a.dropdown-item, nav.navbar .collapse.navbar-collapse .right, nav.navbar .collapse.navbar-collapse, nav.navbar, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .container-empty-state, .empty-state .actions, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .card .card-header .actions, .card .card-header, button.btn, .btn, a.btn, ol.breadcrumbs, .banner .content, .banner, .badge, .avatar-group ul.avatar-list, .avatar-label-group, .alert .content .actions, .alert, .portal, .chat-bubble {
   -webkit-box-orient: horizontal !important;
   -webkit-box-direction: normal !important;
   -ms-flex-direction: row !important;
   flex-direction: row !important;
 }
 
-.flex-column, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, nav.sidebar, .main-panel nav.navbar .manage-plan .plan-contents, .main-panel, .empty-state.empty-state-h .content, .empty-state .content, .empty-state, .banner .content .text, .avatar-label-group .avatar-label-group-container {
+.flex-column, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, nav.sidebar, nav.navbar .manage-plan .plan-contents, .empty-state.empty-state-h .content, .empty-state .content, .empty-state, .banner .content .text, .avatar-label-group .avatar-label-group-container, .portal section.portal-contents {
   -webkit-box-orient: vertical !important;
   -webkit-box-direction: normal !important;
   -ms-flex-direction: column !important;
@@ -7977,13 +7977,13 @@ textarea.form-control-lg {
   flex-wrap: wrap-reverse !important;
 }
 
-.justify-content-start, ul.notification-list li a, ul.tab-menu, .main-content, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, .main-panel .nav-link, .main-panel nav.navbar .manage-plan .plan-contents, .main-panel nav.navbar .manage-plan, .main-panel nav.navbar a.dropdown-item, .main-panel, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .container-empty-state, .empty-state .content, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .card-header .actions, .card .card-header, ol.breadcrumbs, .banner .content, .avatar-group ul.avatar-list, .avatar-label-group .avatar-label-group-container, .avatar-label-group, .alert, .chat-bubble {
+.justify-content-start, ul.notification-list li a, ul.tab-menu, .offcanvas-header .actions, .main-content, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, .nav-link, nav.navbar .manage-plan .plan-contents, nav.navbar .manage-plan, nav.navbar a.dropdown-item, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .container-empty-state, .empty-state .content, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .card-header .actions, .card .card-header, ol.breadcrumbs, .banner .content, .avatar-group ul.avatar-list, .avatar-label-group .avatar-label-group-container, .avatar-label-group, .alert, .portal, .chat-bubble {
   -webkit-box-pack: start !important;
   -ms-flex-pack: start !important;
   justify-content: flex-start !important;
 }
 
-.justify-content-end {
+.justify-content-end, nav.navbar .collapse.navbar-collapse, nav.navbar {
   -webkit-box-pack: end !important;
   -ms-flex-pack: end !important;
   justify-content: flex-end !important;
@@ -7995,7 +7995,7 @@ textarea.form-control-lg {
   justify-content: center !important;
 }
 
-.justify-content-between, ul.notification-list li a .notification-header, .feedback-summary .feedback-overral, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, nav.sidebar, .main-panel nav.navbar .collapse.navbar-collapse .right, .main-panel nav.navbar .collapse.navbar-collapse, .main-panel nav.navbar, .empty-state .actions, .empty-state, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .banner, .badge {
+.justify-content-between, ul.notification-list li a .notification-header, .feedback-summary .feedback-overral, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, .header-options, .offcanvas-header .header-content-left .title, .offcanvas-header .header-content-left a.offcanvas-close, .offcanvas-header .header-content-left, .offcanvas-header, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, nav.sidebar, nav.navbar .collapse.navbar-collapse .right, .empty-state .actions, .empty-state, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .banner, .badge, .portal section.portal-contents {
   -webkit-box-pack: justify !important;
   -ms-flex-pack: justify !important;
   justify-content: space-between !important;
@@ -8012,7 +8012,7 @@ textarea.form-control-lg {
   justify-content: space-evenly !important;
 }
 
-.align-items-start, ul.notification-list li a, .main-panel nav.navbar .manage-plan .plan-contents, .empty-state.empty-state-h .content, .banner .content .text {
+.align-items-start, ul.notification-list li a, nav.navbar .manage-plan .plan-contents, .empty-state.empty-state-h .content, .banner .content .text {
   -webkit-box-align: start !important;
   -ms-flex-align: start !important;
   align-items: flex-start !important;
@@ -8024,7 +8024,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center, ul.notification-list li a .notification-header, .feedback-summary .feedback-overral .feedback-container, .feedback-summary .feedback-overral, .feedback-summary .feedback-good .feedback-container, .feedback-summary .feedback-poor .feedback-container, .feedback-summary .feedback-neutral .feedback-container, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, ul.tab-menu, .main-content, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, nav.sidebar, .main-panel .nav-link, .main-panel nav.navbar .manage-plan, .main-panel nav.navbar a.dropdown-item, .main-panel nav.navbar .collapse.navbar-collapse .right, .main-panel nav.navbar .collapse.navbar-collapse, .main-panel nav.navbar, .main-panel, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .container-empty-state, .empty-state .actions, .empty-state .content, .empty-state, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .card .card-header .actions, .card .card-header, button.btn, .btn, a.btn, ol.breadcrumbs, .banner .content, .banner, .badge, .avatar-group ul.avatar-list, .avatar-label-group .avatar-label-group-container, .avatar-label-group, .chat-bubble {
+.align-items-center, ul.notification-list li a .notification-header, .feedback-summary .feedback-overral .feedback-container, .feedback-summary .feedback-overral, .feedback-summary .feedback-good .feedback-container, .feedback-summary .feedback-poor .feedback-container, .feedback-summary .feedback-neutral .feedback-container, .feedback-summary .feedback-good, .feedback-summary .feedback-poor, .feedback-summary .feedback-neutral, .account-owner-panel, .tag .tag-content, ul.tab-menu li.tab-item a, ul.tab-menu, .header-options, .offcanvas-header .actions, .offcanvas-header .header-content-left .title, .offcanvas-header .header-content-left a.offcanvas-close, .offcanvas-header .header-content-left, .offcanvas-header, .main-content, nav.sidebar .nav-container ul li a.menu-item .link-content, nav.sidebar .nav-container ul li a.menu-item, nav.sidebar .nav-container ul, nav.sidebar .nav-container .top-menu .impersonation-panel, nav.sidebar .nav-container .top-menu, nav.sidebar .nav-container, nav.sidebar, .nav-link, nav.navbar .manage-plan, nav.navbar a.dropdown-item, nav.navbar .collapse.navbar-collapse .right, nav.navbar .collapse.navbar-collapse, nav.navbar, .empty-state.empty-state-h .actions, .empty-state.empty-state-h .container-empty-state, .empty-state .actions, .empty-state .content, .empty-state, .btn-group > .btn:nth-child(n+3), .btn-group > .chat-bubble:nth-child(n+3), .btn-group > :not(.btn-check) + .btn, .btn-group > :not(.btn-check) + .chat-bubble, .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn-group:not(:first-child) > .chat-bubble, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .chat-bubble:not(:last-child):not(.dropdown-toggle), .btn-group > .btn.dropdown-toggle-split:first-child, .btn-group > .dropdown-toggle-split.chat-bubble:first-child, .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn-group:not(:last-child) > .chat-bubble, .btn.dropdown-toggle, .dropdown-toggle.chat-bubble, .card .page-header .header-content .actions, .card .page-header .header-content .page-title, .card .page-header .header-content, .card .page-header nav ol.request-actions li .actions-right, .card .page-header nav ol.request-actions, .card .page-header nav, .card .card-header .actions, .card .card-header, button.btn, .btn, a.btn, ol.breadcrumbs, .banner .content, .banner, .badge, .avatar-group ul.avatar-list, .avatar-label-group .avatar-label-group-container, .avatar-label-group, .chat-bubble {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   align-items: center !important;
@@ -8036,7 +8036,7 @@ textarea.form-control-lg {
   align-items: baseline !important;
 }
 
-.align-items-stretch, .feedback-summary {
+.align-items-stretch, .feedback-summary, .portal section.portal-contents, .portal {
   -webkit-box-align: stretch !important;
   -ms-flex-align: stretch !important;
   align-items: stretch !important;
@@ -11929,6 +11929,14 @@ body body a {
   line-height: 1rem;
 }
 
+.chat-bubble .bubble-text {
+  display: none;
+}
+
+.chat-bubble:hover .bubble-text {
+  display: inline-block;
+}
+
 .text-bg-success {
   background-color: #039855 !important;
   color: white !important;
@@ -11936,6 +11944,27 @@ body body a {
 
 .form-check-input:hover {
   cursor: pointer;
+}
+
+.portal {
+  height: 100% !important;
+}
+
+.portal section.portal-contents {
+  width: 100%;
+  height: 100% !important;
+  overflow-x: hidden;
+  gap: 0;
+}
+
+.portal section.portal-contents .section-contents {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.portal section.portal-contents .section-contents .card {
+  height: 100% !important;
+  overflow-x: hidden;
 }
 
 .fit-content {
@@ -13089,14 +13118,14 @@ body body a {
   line-height: 1.125rem !important;
 }
 
-.text-xs-medium, .tag.tag-sm, .tag-count, table.table tr th[scope=col], .btn-sm div, .btn-group-sm > .btn div, .btn-group-sm > .chat-bubble div {
+.text-xs-medium, .tag.tag-sm, .tag-count, table.table tr th[scope=col], label.form-label, .btn-sm div, .btn-group-sm > .btn div, .btn-group-sm > .chat-bubble div {
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 0.75rem !important;
   line-height: 1.125rem !important;
 }
 
-.text-xs-semibold, nav.sidebar .nav-container .top-menu .impersonation-panel .subtitle, nav.sidebar .nav-container .top-menu .impersonation-panel .title, .main-panel nav.navbar .manage-plan .plan-contents .plan-label, .avatar-label-group-sm .avatar-label-group-container .title {
+.text-xs-semibold, nav.sidebar .nav-container .top-menu .impersonation-panel .subtitle, nav.sidebar .nav-container .top-menu .impersonation-panel .title, nav.navbar .manage-plan .plan-contents .plan-label, .avatar-label-group-sm .avatar-label-group-container .title {
   font-weight: 600 !important;
   font-style: normal !important;
   font-size: 0.75rem !important;
@@ -13145,14 +13174,14 @@ body body a {
   line-height: 1.25rem !important;
 }
 
-.text-sm-regular, table.table tr td p, .main-panel nav.navbar .manage-plan .plan-contents .plan-description, .form-select::placeholder, .form-select, .form-control-plaintext, .form-control::placeholder, .form-control, .avatar-label-group .avatar-label-group-container .subtitle, .alert .content .description {
+.text-sm-regular, table.table tr td p, nav.navbar .manage-plan .plan-contents .plan-description, .form-select::placeholder, .form-select, .form-control-plaintext, .form-control::placeholder, .form-control, .avatar-label-group .avatar-label-group-container .subtitle, .alert .content .description {
   font-weight: 400 !important;
   font-style: normal !important;
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
 }
 
-.text-sm-medium, ul.notification-list li a:hover .notification-title, ul.notification-list li a .notification-body span.highlight-text, ul.notification-list li a .notification-header .notification-title, .feedback-summary .feedback-label, .tag, table.table tr td h1, table.table tr td .h1, nav.sidebar .nav-container ul li a.menu-item, label.form-label, .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .chat-bubble, a.link-success, a.link-danger, table.table tr td.has-actions ul li a.link-danger, a.link-warning, a.link-gray, a.link-primary, ol.breadcrumbs li.breadcrumbs-item, .badge-status, .avatar-label-group .avatar-label-group-container .title, .chat-bubble .bubble-text {
+.text-sm-medium, ul.notification-list li a:hover .notification-title, ul.notification-list li a .notification-body span.highlight-text, ul.notification-list li a .notification-header .notification-title, .feedback-summary .feedback-label, .tag, table.table tr td h1, table.table tr td .h1, nav.sidebar .nav-container ul li a.menu-item, .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .chat-bubble, a.link-success, a.link-danger, table.table tr td.has-actions ul li a.link-danger, a.link-warning, a.link-gray, a.link-primary, ol.breadcrumbs li.breadcrumbs-item, .badge-status, .avatar-label-group .avatar-label-group-container .title, .chat-bubble .bubble-text {
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 0.875rem !important;
@@ -13294,7 +13323,7 @@ body body a {
   line-height: 1.75rem !important;
 }
 
-.text-lg-semibold, .card .card-header .title, .avatar-label-group-xl .avatar-label-group-container .title {
+.text-lg-semibold, .offcanvas-header .header-content-left .title, .card .card-header .title, .avatar-label-group-xl .avatar-label-group-container .title {
   font-weight: 600 !important;
   font-style: normal !important;
   font-size: 1.125rem !important;
@@ -13368,7 +13397,7 @@ body body a {
   line-height: 1.875rem !important;
 }
 
-.text-xl-medium {
+.text-xl-medium, .offcanvas-header .header-content-left a.offcanvas-close {
   font-weight: 500 !important;
   font-style: normal !important;
   font-size: 1.25rem !important;
@@ -13507,7 +13536,7 @@ body body a {
   line-height: 2.375rem !important;
 }
 
-.text-d-sm-semibold {
+.text-d-sm-semibold, .offcanvas-header .header-content-left .title h1, .offcanvas-header .header-content-left .title .h1 {
   font-weight: 600 !important;
   font-style: normal !important;
   font-size: 1.875rem !important;
@@ -14265,7 +14294,7 @@ button.btn:hover, .btn:hover, .chat-bubble:hover, a.btn:hover {
 
 .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .chat-bubble {
   padding: 0.5rem 0.875rem !important;
-  min-height: 0;
+  min-height: 40px;
   font-size: 12px !important;
   gap: 0.125rem;
 }
@@ -15027,6 +15056,10 @@ button.btn:hover, .btn:hover, .chat-bubble:hover, a.btn:hover {
   color: #D92D20;
 }
 
+textarea {
+  resize: none;
+}
+
 label.form-label {
   color: #344054;
   margin-bottom: 0.375rem;
@@ -15741,68 +15774,63 @@ a.link-success:hover {
     --bs-modal-width: 400px;
   }
 }
-.main-panel {
-  width: 100%;
-  height: 100%;
-}
-
-.main-panel nav.navbar {
+nav.navbar {
   width: 100% !important;
   padding: 0.5rem 1.5rem;
   background-color: #FFFFFF;
 }
 
-.main-panel nav.navbar .collapse.navbar-collapse {
+nav.navbar .collapse.navbar-collapse {
   width: 100%;
 }
 
-.main-panel nav.navbar .avatar .dropdown-toggle::after {
+nav.navbar .avatar .dropdown-toggle::after {
   display: none !important;
   opacity: 0 !important;
 }
 
-.main-panel nav.navbar a.dropdown-item {
+nav.navbar a.dropdown-item {
   gap: 0.5rem;
 }
 
-.main-panel nav.navbar a.dropdown-item i {
+nav.navbar a.dropdown-item i {
   margin: 0;
 }
 
-.main-panel nav.navbar a.dropdown-item.danger {
+nav.navbar a.dropdown-item.danger {
   color: #F04438 !important;
 }
 
-.main-panel nav.navbar a.dropdown-item.danger:hover {
+nav.navbar a.dropdown-item.danger:hover {
   background-color: #FEF3F2 !important;
 }
 
-.main-panel nav.navbar .manage-plan {
+nav.navbar .manage-plan {
   padding: 0.5rem;
   background-color: #F9FAFB;
   gap: 12px;
   border-radius: 0.375rem;
 }
 
-.main-panel nav.navbar .manage-plan .plan-contents .plan-label {
+nav.navbar .manage-plan .plan-contents .plan-label {
   color: #101828;
 }
 
-.main-panel nav.navbar .manage-plan .plan-contents .plan-description {
+nav.navbar .manage-plan .plan-contents .plan-description {
   color: #667085;
 }
 
-.main-panel .nav-link {
+.nav-link {
   color: #667085 !important;
 }
 
-.main-panel nav.navbar.bg-light {
+nav.navbar.bg-light {
   background-color: white !important;
 }
 
 nav.sidebar {
   background-color: black;
-  height: 100%;
+  height: 100% !important;
   width: 220px !important;
 }
 
@@ -15876,6 +15904,7 @@ nav.sidebar .nav-container ul li a.menu-item .link-content {
 nav.sidebar .nav-container ul li a.menu-item .link-content i {
   color: #667085 !important;
   width: 18px;
+  text-align: center;
 }
 
 nav.sidebar .nav-container ul li a.menu-item .badge {
@@ -15900,7 +15929,7 @@ nav.sidebar .nav-container ul li a.menu-item:hover .badge {
 }
 
 nav.sidebar .nav-container ul li a.menu-item.active {
-  background-color: #8943FF !important;
+  background-color: #6B04FF !important;
   color: #FFFFFF !important;
 }
 
@@ -15927,6 +15956,79 @@ nav.sidebar .bottom-container {
 .main-content .contents {
   padding: 1.5rem !important;
   overflow: auto;
+}
+
+.offcanvas.offcanvas-end {
+  -webkit-box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.3), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 20px 24px -4px rgba(0, 0, 0, 0.3), 0px 8px 8px -4px rgba(0, 0, 0, 0.03);
+  border-left: 1px solid #EAECF0 !important;
+  border-top: 1px solid #EAECF0 !important;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #EAECF0;
+  min-height: 75px;
+  overflow: hidden;
+  position: sticky;
+  padding: 0 !important;
+}
+
+.offcanvas-header .header-content-left {
+  gap: 1.5rem;
+  min-height: 75px;
+}
+
+.offcanvas-header .header-content-left a.offcanvas-close {
+  padding: 1rem 1.5rem;
+  border-right: 1px solid #EAECF0 !important;
+  min-height: 75px;
+  opacity: 1;
+  color: #667085 !important;
+  text-decoration: none;
+}
+
+.offcanvas-header .header-content-left a.offcanvas-close:hover {
+  background-color: #F9FAFB;
+  color: #344054 !important;
+}
+
+.offcanvas-header .header-content-left .title {
+  color: #000000;
+}
+
+.offcanvas-header .header-content-left .title h1, .offcanvas-header .header-content-left .title .h1 {
+  line-height: 2rem !important;
+  margin: 0;
+}
+
+.offcanvas-header .header-content-left .title i {
+  margin-right: 16px;
+  color: #667085;
+}
+
+.offcanvas-header .actions {
+  gap: 0.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.offcanvas-header .actions .btn, .offcanvas-header .actions .chat-bubble {
+  margin-left: 1rem;
+}
+
+.header-options {
+  gap: 1rem;
+  max-width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: #FCFCFD;
+  border-bottom: 1px solid #EAECF0;
+}
+
+.offcanvas-body {
+  height: 100%;
+  padding-bottom: 100px;
+  padding: 1.5rem;
 }
 
 .pagination .page-item a.page-link {
@@ -16033,7 +16135,7 @@ table.table tr td a {
   text-decoration: none;
 }
 
-table.table tr td.text a {
+table.table tr td a.text {
   color: #667085 !important;
 }
 
@@ -16681,14 +16783,14 @@ html {
   line-height: 1.125rem;
 }
 
-.text-xs-medium, .btn-sm div, .btn-group-sm > .btn div, .btn-group-sm > .chat-bubble div, table.table tr th[scope=col], .tag-count, .tag.tag-sm {
+.text-xs-medium, .btn-sm div, .btn-group-sm > .btn div, .btn-group-sm > .chat-bubble div, label.form-label, table.table tr th[scope=col], .tag-count, .tag.tag-sm {
   font-weight: 500;
   font-style: normal;
   font-size: 0.75rem;
   line-height: 1.125rem;
 }
 
-.text-xs-semibold, .avatar-label-group-sm .avatar-label-group-container .title, .main-panel nav.navbar .manage-plan .plan-contents .plan-label, nav.sidebar .nav-container .top-menu .impersonation-panel .title, nav.sidebar .nav-container .top-menu .impersonation-panel .subtitle {
+.text-xs-semibold, .avatar-label-group-sm .avatar-label-group-container .title, nav.navbar .manage-plan .plan-contents .plan-label, nav.sidebar .nav-container .top-menu .impersonation-panel .title, nav.sidebar .nav-container .top-menu .impersonation-panel .subtitle {
   font-weight: 600;
   font-style: normal;
   font-size: 0.75rem;
@@ -16731,14 +16833,14 @@ html {
   line-height: 1.25rem;
 }
 
-.text-sm-regular, .alert .content .description, .avatar-label-group .avatar-label-group-container .subtitle, .form-control, .form-control::placeholder, .form-control-plaintext, .form-select, .form-select::placeholder, .main-panel nav.navbar .manage-plan .plan-contents .plan-description, table.table tr td p {
+.text-sm-regular, .alert .content .description, .avatar-label-group .avatar-label-group-container .subtitle, .form-control, .form-control::placeholder, .form-control-plaintext, .form-select, .form-select::placeholder, nav.navbar .manage-plan .plan-contents .plan-description, table.table tr td p {
   font-weight: 400;
   font-style: normal;
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.text-sm-medium, ul.notification-list li a:hover .notification-title, ul.notification-list li a .notification-body span.highlight-text, ul.notification-list li a .notification-header .notification-title, .feedback-summary .feedback-label, .chat-bubble .bubble-text, .avatar-label-group .avatar-label-group-container .title, .badge-status, ol.breadcrumbs li.breadcrumbs-item, a.link-primary, a.link-gray, a.link-warning, a.link-danger, a.link-success, .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .chat-bubble, label.form-label, nav.sidebar .nav-container ul li a.menu-item, table.table tr td h1, table.table tr td .h1, table.table tr td.has-actions ul li a.link-danger, .tag {
+.text-sm-medium, ul.notification-list li a:hover .notification-title, ul.notification-list li a .notification-body span.highlight-text, ul.notification-list li a .notification-header .notification-title, .feedback-summary .feedback-label, .chat-bubble .bubble-text, .avatar-label-group .avatar-label-group-container .title, .badge-status, ol.breadcrumbs li.breadcrumbs-item, a.link-primary, a.link-gray, a.link-warning, a.link-danger, a.link-success, .btn-sm, .btn-group-sm > .btn, .btn-group-sm > .chat-bubble, nav.sidebar .nav-container ul li a.menu-item, table.table tr td h1, table.table tr td .h1, table.table tr td.has-actions ul li a.link-danger, .tag {
   font-weight: 500;
   font-style: normal;
   font-size: 0.875rem;
@@ -16868,7 +16970,7 @@ html {
   line-height: 1.75rem;
 }
 
-.text-lg-semibold, .avatar-label-group-xl .avatar-label-group-container .title, .card .card-header .title {
+.text-lg-semibold, .avatar-label-group-xl .avatar-label-group-container .title, .card .card-header .title, .offcanvas-header .header-content-left .title {
   font-weight: 600;
   font-style: normal;
   font-size: 1.125rem;
@@ -16936,7 +17038,7 @@ html {
   line-height: 1.875rem;
 }
 
-.text-xl-medium {
+.text-xl-medium, .offcanvas-header .header-content-left a.offcanvas-close {
   font-weight: 500;
   font-style: normal;
   font-size: 1.25rem;
@@ -17063,7 +17165,7 @@ html {
   line-height: 2.375rem;
 }
 
-.text-d-sm-semibold {
+.text-d-sm-semibold, .offcanvas-header .header-content-left .title h1, .offcanvas-header .header-content-left .title .h1 {
   font-weight: 600;
   font-style: normal;
   font-size: 1.875rem;

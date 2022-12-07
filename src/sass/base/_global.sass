@@ -64,6 +64,12 @@ body
 
 	.bubble-text
 		@extend .text-sm-medium
+		display: none
+
+	&:hover
+
+		.bubble-text
+			display: inline-block
 
 .text-bg-success
 	background-color: $success-600 !important
@@ -73,3 +79,28 @@ body
 
 	&:hover
 		cursor: pointer
+
+.portal
+	height: 100% !important
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-start
+	@extend .align-items-stretch
+
+	section.portal-contents
+		@extend .d-flex
+		@extend .flex-column
+		@extend .justify-content-between
+		@extend .align-items-stretch
+		width: 100%
+		height: 100% !important
+		overflow-x: hidden
+		gap: 0
+
+		.section-contents
+			height: 100%
+			overflow-x: hidden
+
+			.card
+				height: 100% !important
+				overflow-x: hidden

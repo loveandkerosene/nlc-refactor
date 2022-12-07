@@ -167,6 +167,10 @@ router.get('/brands', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'brands.html'));
 });
 
+router.get('/brands', (req, res) => {
+  res.sendFile(path.join(__dirname, 'pages', 'brand-profile.html'));
+});
+
 router.get('/notifications', (req, res) => {
   res.sendFile(path.join(__dirname, 'pages', 'notifications.html'));
 });

@@ -1,0 +1,87 @@
+.offcanvas.offcanvas-end
+	@include shadow-xl
+	border-left: 1px solid $gray-200 !important
+	border-top: 1px solid $gray-200 !important
+
+.offcanvas-header
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-between
+	@extend .align-items-center
+	border-bottom: 1px solid $gray-200
+	min-height: 75px
+	overflow: hidden
+	position: sticky
+	padding: 0 !important
+
+	.header-content-left
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-between
+		@extend .align-items-center
+		gap: 1.5rem
+		min-height: 75px
+		
+
+		a.offcanvas-close
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-between
+			@extend .align-items-center
+			padding: 1rem 1.5rem
+			border-right: 1px solid $gray-200 !important
+			min-height: 75px
+			opacity: 1
+			color: $gray-500 !important
+			@extend .text-xl-medium
+			text-decoration: none
+
+			&:hover
+				background-color: $gray-50
+				color: $gray-700 !important
+
+		.title
+			@extend .d-flex
+			@extend .flex-row
+			@extend .justify-content-between
+			@extend .align-items-center
+			@extend .text-lg-semibold
+			color: $black
+
+			h1
+				@extend .text-d-sm-semibold
+				line-height: 2rem !important
+				margin: 0
+
+			i
+				margin-right: 16px
+				color: $gray-500
+
+	.actions
+		@extend .d-flex
+		@extend .flex-row
+		@extend .justify-content-start
+		@extend .align-items-center
+		gap: 0.5rem
+		padding-right: 1.5rem
+		padding-top: 1rem
+		padding-bottom: 1rem
+
+		.btn
+			margin-left: 1rem
+
+.header-options
+	@extend .d-flex
+	@extend .flex-row
+	@extend .justify-content-between
+	@extend .align-items-center
+	gap: 1rem
+	max-width: 100%
+	padding: 0.75rem 1.5rem
+	background-color: $gray-25
+	border-bottom: 1px solid $gray-200
+
+.offcanvas-body
+	height: 100%
+	padding-bottom: 100px
+	padding: 1.5rem
